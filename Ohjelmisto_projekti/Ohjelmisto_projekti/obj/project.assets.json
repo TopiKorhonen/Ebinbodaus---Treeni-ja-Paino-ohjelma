@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mirok\\Documents\\Gitsekoilua\\Ohjelmisto_projekti\\Ebinbodaus---Treeni-ja-Paino-ohjelma\\Ohjelmisto_projekti\\Ohjelmisto_projekti\\Ohjelmisto_projekti.csproj",
+      "projectUniqueName": "B:\\Ohjelmointisekoilua\\Ebinbodaus---Treeni-ja-Paino-ohjelma\\Ohjelmisto_projekti\\Ohjelmisto_projekti\\Ohjelmisto_projekti.csproj",
       "projectName": "Ohjelmisto_projekti",
-      "projectPath": "C:\\Users\\mirok\\Documents\\Gitsekoilua\\Ohjelmisto_projekti\\Ebinbodaus---Treeni-ja-Paino-ohjelma\\Ohjelmisto_projekti\\Ohjelmisto_projekti\\Ohjelmisto_projekti.csproj",
+      "projectPath": "B:\\Ohjelmointisekoilua\\Ebinbodaus---Treeni-ja-Paino-ohjelma\\Ohjelmisto_projekti\\Ohjelmisto_projekti\\Ohjelmisto_projekti.csproj",
       "packagesPath": "C:\\Users\\mirok\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mirok\\Documents\\Gitsekoilua\\Ohjelmisto_projekti\\Ebinbodaus---Treeni-ja-Paino-ohjelma\\Ohjelmisto_projekti\\Ohjelmisto_projekti\\obj\\",
+      "outputPath": "B:\\Ohjelmointisekoilua\\Ebinbodaus---Treeni-ja-Paino-ohjelma\\Ohjelmisto_projekti\\Ohjelmisto_projekti\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mirok\\AppData\\Roaming\\NuGet\\NuGet.Config",
