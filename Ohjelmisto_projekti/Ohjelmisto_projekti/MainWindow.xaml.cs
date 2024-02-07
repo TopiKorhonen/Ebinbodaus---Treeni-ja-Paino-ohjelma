@@ -25,8 +25,8 @@ namespace Ohjelmisto_projekti
         public MainWindow()
         {
             InitializeComponent();
-            double[] dataX = {1,2,3,4,5,6,7};
-            double[] dataY = { 50,76, 77, 88,78,67,100 };
+            double[] dataX = { 1, 2, 3, 4, 5, 6, 7 };
+            double[] dataY = { 76.4, 77.2, 72.5, 77, 79.2 };
             WpfPlot1.Plot.Add.Scatter(dataX, dataY);
             WpfPlot1.Refresh();
 
