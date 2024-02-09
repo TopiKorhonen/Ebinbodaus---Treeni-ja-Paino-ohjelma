@@ -8,11 +8,10 @@ namespace Ohjelmisto_projekti
 {
     internal class Painoni
     {
-        public int paino { get; set; } // paino grammoina. Nice.
-                                       // Käyttäjän empiirisesti deduktoima päätelmä karheusasteesta, eli luokiteltava muuttuja
+        public double paino { get; set; } 
 
         private int _paivamaaraa { get; set; }
-        public int paivamaaraa
+        public int paiva
         {
             get
             {
@@ -24,22 +23,21 @@ namespace Ohjelmisto_projekti
 
                 _paivamaaraa = tempNumero;
             }
-        } // Käyttäjän arvio kiven laadusta
+        } 
 
         public string tunnisteTieto
         {
             get
             {
-                return (paino * 3).ToString();
+                return ((paino + paiva) / 2).ToString();
             }
         }
 
-        public Painoni(int paino, int paivamaaraa)
+        public Painoni(double paino, int paivamaaraa)
         {
 
             this.paino = paino;
-
-            this.paivamaaraa = paivamaaraa;
+            this.paiva = paivamaaraa;
         }
     }
 }

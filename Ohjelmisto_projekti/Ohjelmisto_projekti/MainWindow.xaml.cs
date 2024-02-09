@@ -1,7 +1,9 @@
-﻿using System;
+﻿using ScottPlot.Plottables;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -21,36 +23,40 @@ namespace Ohjelmisto_projekti
     /// </summary>
     public partial class MainWindow : Window
     {
-        List<Painoni> PainoLista = new List<Painoni>();
+        private List<Painoni> PainoLista = new List<Painoni>();
+        private double[] dataY = null; //dataY on määritelty null 
         public MainWindow()
         {
             InitializeComponent();
             double[] dataX = { 1, 2, 3, 4, 5, 6, 7 };
-            double[] dataY = { 76.4, 77.2, 72.5, 77, 79.2 };
-            WpfPlot1.Plot.Add.Scatter(dataX, dataY);
+            
+            WpfPlot1.Plot.Add.Scatter(dataX, dataY ?? new double[0]); //Jos dataY ei ole null, sitä käytetään Y-koordinanttina scatter plotissa
+                                                                      //jos dataY on null käytetään uutta tyhjää arrayta (new double[0])
+                                                                      //täten scatter plotissa on aina oikeaa dataa ja mahdollinen null ref ei synny.
             WpfPlot1.Refresh();
 
-            
-            
             PaivitaPaino();
 
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string name = string.Empty;
-            int weight;
-            string ruffness = string.Empty;
-            int grade;
+            double weight;
+            int date;
 
+            double.TryParse(paino.Text, out weight);
+            int.TryParse(paivamaaraa.Text, out date);
 
-            int.TryParse(paino.Text, out weight);
-            int.TryParse(paivamaaraa.Text, out grade);
-
-            if (weight + grade > 0)
+            if (weight > 0 && date > 0 && date <= 7) //painon on oltava enemmän kun 0 ja päivä 1-7 välillä
             {
-                var newRock = new Painoni(weight, grade);
-                PainoLista.Add(newRock);
+                var newEntry = new Painoni(weight, date);
+                PainoLista.Add(newEntry);
+                var weights = PainoLista.Select(entry => entry.paino).ToArray();//weights muuttuu arrayksi joka hakee PainoListalta arvonsa
+                var dates = PainoLista.Select(entry => entry.paiva).ToArray(); //dates muuttuu arrayksi joka hakee PainoListalta arvonsa
+
+                WpfPlot1.Plot.Clear();
+                WpfPlot1.Plot.Add.Scatter(dates, weights); //weights ja dates käytetään y ja x arvoina diagrammissa
+                WpfPlot1.Refresh();
             }
             PaivitaPaino();
             
@@ -58,9 +64,10 @@ namespace Ohjelmisto_projekti
         public void PaivitaPaino()
         {
             var stringgi = "";
-            foreach (var kivi in PainoLista)
-                stringgi += $"[{kivi.tunnisteTieto}]  ({kivi.paino}kg) - ({kivi.paivamaaraa}Päivämäärä) \n";
+            foreach (var entry in PainoLista)
+                stringgi += $"[{entry.tunnisteTieto}]  ({entry.paino}kg) - ({entry.paiva}Päivä) \n";
             listasto.Text = stringgi;
         }
+
     }
 }
