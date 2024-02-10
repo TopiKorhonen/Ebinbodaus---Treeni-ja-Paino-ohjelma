@@ -59,7 +59,8 @@ namespace Ohjelmisto_projekti
                 WpfPlot1.Refresh();
             }
             PaivitaPaino();
-            
+            paino.Clear();
+            paivamaaraa.Clear();
         }
         public void PaivitaPaino()
         {
