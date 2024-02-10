@@ -824,24 +824,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\John\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\mirok\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\John\\OneDrive - Hämeen ammattikorkeakoulu\\ohjelmointi\\C#\\Ebinbodaus---Treeni-ja-Paino-ohjelma\\Ohjelmisto_projekti\\Ohjelmisto_projekti\\Ohjelmisto_projekti.csproj",
+      "projectUniqueName": "C:\\Users\\mirok\\Documents\\Gitsekoilua\\Ohjelmisto_projekti\\Ebinbodaus---Treeni-ja-Paino-ohjelma\\Ohjelmisto_projekti\\Ohjelmisto_projekti\\Ohjelmisto_projekti.csproj",
       "projectName": "Ohjelmisto_projekti",
-      "projectPath": "C:\\Users\\John\\OneDrive - Hämeen ammattikorkeakoulu\\ohjelmointi\\C#\\Ebinbodaus---Treeni-ja-Paino-ohjelma\\Ohjelmisto_projekti\\Ohjelmisto_projekti\\Ohjelmisto_projekti.csproj",
-      "packagesPath": "C:\\Users\\John\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\John\\OneDrive - Hämeen ammattikorkeakoulu\\ohjelmointi\\C#\\Ebinbodaus---Treeni-ja-Paino-ohjelma\\Ohjelmisto_projekti\\Ohjelmisto_projekti\\obj\\",
+      "projectPath": "C:\\Users\\mirok\\Documents\\Gitsekoilua\\Ohjelmisto_projekti\\Ebinbodaus---Treeni-ja-Paino-ohjelma\\Ohjelmisto_projekti\\Ohjelmisto_projekti\\Ohjelmisto_projekti.csproj",
+      "packagesPath": "C:\\Users\\mirok\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mirok\\Documents\\Gitsekoilua\\Ohjelmisto_projekti\\Ebinbodaus---Treeni-ja-Paino-ohjelma\\Ohjelmisto_projekti\\Ohjelmisto_projekti\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\John\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\mirok\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
