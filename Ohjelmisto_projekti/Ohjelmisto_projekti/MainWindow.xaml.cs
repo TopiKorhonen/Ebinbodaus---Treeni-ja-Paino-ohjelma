@@ -65,7 +65,7 @@ namespace Ohjelmisto_projekti
         {
             var stringgi = "";
             foreach (var entry in PainoLista)
-                stringgi += $"[{entry.tunnisteTieto}]  ({entry.paino}kg) - ({entry.paiva}Päivä) \n";
+                stringgi += $"  {entry.paino}kg - {entry.paiva}. Päivä \n";
             listasto.Text = stringgi;
         }
 
