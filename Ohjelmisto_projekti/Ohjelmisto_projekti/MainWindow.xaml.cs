@@ -75,13 +75,14 @@ namespace Ohjelmisto_projekti
                 MessageBox.Show("Virheellinen syöte. Anna kelvollinen paino (kg) ja päivämäärä (1-7).");
             }
             PaivitaPaino();
-            
+            paino.Clear();
+            paivamaaraa.Clear();
         }
         public void PaivitaPaino()
         {
             var stringgi = "";
             foreach (var entry in PainoLista)
-                stringgi += $"[{entry.tunnisteTieto}]  ({entry.paino}kg) - ({entry.paiva}Päivä) \n";
+                stringgi += $"  {entry.paino}kg - {entry.paiva}. Päivä \n";
             listasto.Text = stringgi;
         }
 
