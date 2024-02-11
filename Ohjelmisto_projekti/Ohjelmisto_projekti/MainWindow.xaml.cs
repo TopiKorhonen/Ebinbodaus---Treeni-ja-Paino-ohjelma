@@ -39,6 +39,7 @@ namespace Ohjelmisto_projekti
 
         }
 
+        private int lastEnteredDay = 0;
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             double weight;
@@ -49,14 +50,29 @@ namespace Ohjelmisto_projekti
 
             if (weight > 0 && date > 0 && date <= 7) //painon on oltava enemmän kun 0 ja päivä 1-7 välillä
             {
-                var newEntry = new Painoni(weight, date);
-                PainoLista.Add(newEntry);
-                var weights = PainoLista.Select(entry => entry.paino).ToArray();//weights muuttuu arrayksi joka hakee PainoListalta arvonsa
-                var dates = PainoLista.Select(entry => entry.paiva).ToArray(); //dates muuttuu arrayksi joka hakee PainoListalta arvonsa
+                if (date <= lastEnteredDay)
+                {
+                    MessageBox.Show("Kyseinen päivä on jo listattu, valitse toinen päivä");
+                }
+                else
+                {
+                    var newEntry = new Painoni(weight, date);
+                    PainoLista.Add(newEntry);
 
-                WpfPlot1.Plot.Clear();
-                WpfPlot1.Plot.Add.Scatter(dates, weights); //weights ja dates käytetään y ja x arvoina diagrammissa
-                WpfPlot1.Refresh();
+                    var weights = PainoLista.Select(entry => entry.paino).ToArray();//weights muuttuu arrayksi joka hakee PainoListalta arvonsa
+                    var dates = PainoLista.Select(entry => entry.paiva).ToArray(); //dates muuttuu arrayksi joka hakee PainoListalta arvonsa
+
+                    WpfPlot1.Plot.Clear();
+                    WpfPlot1.Plot.Add.Scatter(dates, weights); //weights ja dates käytetään y ja x arvoina diagrammissa
+                    WpfPlot1.Refresh();
+
+                    lastEnteredDay = date;
+                }
+                
+            }
+            else
+            {
+                MessageBox.Show("Virheellinen syöte. Anna kelvollinen paino (kg) ja päivämäärä (1-7).");
             }
             PaivitaPaino();
             
