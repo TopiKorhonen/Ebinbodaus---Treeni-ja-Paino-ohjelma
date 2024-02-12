@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Margin="3,0,-3,-1">
-        <ScottPlot:WpfPlot x:Name="WpfPlot1" Margin="57,155,270,10" DisplayScale="1" />
+        <ScottPlot:WpfPlot x:Name="WpfPlot1" Margin="57,155,270,10" DisplayScale="1" IsEnabled="False" />
         <Button Content="Lisää paino" HorizontalAlignment="Left" Margin="518,46,0,0" VerticalAlignment="Top" Height="39" Width="112" Click="Button_Click" IsDefault="True"/>
         <TextBox x:Name="paino" HorizontalAlignment="Left" Margin="135,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBlock x:Name="l_paino" HorizontalAlignment="Left" Margin="135,64,0,0" TextWrapping="Wrap" Text="Paino" VerticalAlignment="Top"/>

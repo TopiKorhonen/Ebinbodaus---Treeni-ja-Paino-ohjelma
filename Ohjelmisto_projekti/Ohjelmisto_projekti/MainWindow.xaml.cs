@@ -1,6 +1,9 @@
-﻿using ScottPlot.Plottables;
+﻿using ScottPlot;
+using ScottPlot.Plottables;
+using ScottPlot.WPF;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Diagnostics;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
@@ -28,11 +31,19 @@ namespace Ohjelmisto_projekti
         public MainWindow()
         {
             InitializeComponent();
+            
             double[] dataX = { 1, 2, 3, 4, 5, 6, 7 };
             
-            WpfPlot1.Plot.Add.Scatter(dataX, dataY ?? new double[0]); //Jos dataY ei ole null, sitä käytetään Y-koordinanttina scatter plotissa
-                                                                      //jos dataY on null käytetään uutta tyhjää arrayta (new double[0])
-                                                                      //täten scatter plotissa on aina oikeaa dataa ja mahdollinen null ref ei synny.
+            WpfPlot1.Plot.Style.ColorAxes(ScottPlot.Color.FromHex("#ff9100"));
+            WpfPlot1.Plot.Add.Scatter(dataX, dataY ?? new double[0]);               //Jos dataY ei ole null, sitä käytetään Y-koordinanttina scatter plotissa
+                                                                                    //jos dataY on null käytetään uutta tyhjää arrayta (new double[0])
+                                                                                    //täten scatter plotissa on aina oikeaa dataa ja mahdollinen null ref ei synny.
+
+            WpfPlot1.Plot.Axes.SetLimits(1, 7, 60, 100);
+            WpfPlot1.Plot.Axes.Bottom.MajorTickStyle.Length = 10;
+            WpfPlot1.Plot.Axes.Bottom.MajorTickStyle.Width = 2;
+            WpfPlot1.Plot.Axes.Bottom.TickGenerator = new ScottPlot.TickGenerators.NumericFixedInterval(1);                                                   
+
             WpfPlot1.Refresh();
 
             PaivitaPaino();
@@ -64,8 +75,13 @@ namespace Ohjelmisto_projekti
 
                     WpfPlot1.Plot.Clear();
                     WpfPlot1.Plot.Add.Scatter(dates, weights); //weights ja dates käytetään y ja x arvoina diagrammissa
-                    WpfPlot1.Refresh();
+                    var scatter = WpfPlot1.Plot.Add.Scatter(dates, weights); // Add scatter plot and capture it in a variable
+                    scatter.Color = ScottPlot.Color.FromHex("#ff002f"); // Set scatter color to red
+                    scatter.LineWidth = 2;
 
+                    WpfPlot1.Plot.Axes.AutoScale();
+                    WpfPlot1.Refresh();
+                    
                     lastEnteredDay = date;
                 }
                 
@@ -82,7 +98,7 @@ namespace Ohjelmisto_projekti
         {
             var stringgi = "";
             foreach (var entry in PainoLista)
-                stringgi += $"  {entry.paino}kg - {entry.paiva}. Päivä \n";
+                stringgi += $" [{entry.tunnisteTieto}]  {entry.paino}kg - {entry.paiva}. Päivä \n";
             listasto.Text = stringgi;
         }
 

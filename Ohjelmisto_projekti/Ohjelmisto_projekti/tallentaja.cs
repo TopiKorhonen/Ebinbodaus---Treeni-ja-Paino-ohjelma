@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Ohjelmisto_projekti
 {
-    internal class tallentaja
+    internal class Tallentaja
     {
     }
 }
