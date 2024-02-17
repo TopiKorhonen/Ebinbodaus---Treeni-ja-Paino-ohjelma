@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Diagnostics;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
@@ -27,23 +28,18 @@ namespace Ohjelmisto_projekti
     public partial class MainWindow : Window
     {
         private List<Painoni> PainoLista = new List<Painoni>();
-        private double[] dataY = null; //dataY on määritelty null 
+        List<PaivaLista> PaivaList = new List<PaivaLista>();
         public MainWindow()
         {
             InitializeComponent();
             
             double[] dataX = { 1, 2, 3, 4, 5, 6, 7 };
-            
-            WpfPlot1.Plot.Style.ColorAxes(ScottPlot.Color.FromHex("#ff9100"));
-            WpfPlot1.Plot.Add.Scatter(dataX, dataY ?? new double[0]);               //Jos dataY ei ole null, sitä käytetään Y-koordinanttina scatter plotissa
-                                                                                    //jos dataY on null käytetään uutta tyhjää arrayta (new double[0])
-                                                                                    //täten scatter plotissa on aina oikeaa dataa ja mahdollinen null ref ei synny.
-
+            WpfPlot1.Plot.Axes.DateTimeTicksBottom();
             WpfPlot1.Plot.Axes.SetLimits(1, 7, 60, 100);
             WpfPlot1.Plot.Axes.Bottom.MajorTickStyle.Length = 10;
             WpfPlot1.Plot.Axes.Bottom.MajorTickStyle.Width = 2;
-            WpfPlot1.Plot.Axes.Bottom.TickGenerator = new ScottPlot.TickGenerators.NumericFixedInterval(1);                                                   
-
+            
+            WpfPlot1.Plot.Style.ColorAxes(ScottPlot.Color.FromHex("#ff9100"));
             WpfPlot1.Refresh();
 
             PaivitaPaino();
@@ -54,25 +50,28 @@ namespace Ohjelmisto_projekti
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             double weight;
-            int date;
-
             double.TryParse(paino.Text, out weight);
-            int.TryParse(paivamaaraa.Text, out date);
 
-            if (weight > 0 && date > 0 && date <= 7) //painon on oltava enemmän kun 0 ja päivä 1-7 välillä
+            DateTime date = calendar.SelectedDate ?? DateTime.MinValue;
+            // Get the selected date from the DatePicker
+
+
+
+            if (calendar.SelectedDate != DateTime.MinValue)
             {
-                if (date <= lastEnteredDay)
-                {
-                    MessageBox.Show("Kyseinen päivä on jo listattu, valitse toinen päivä");
-                }
-                else
-                {
-                    var newEntry = new Painoni(weight, date);
-                    PainoLista.Add(newEntry);
+                var selectedDate = calendar.SelectedDate ?? DateTime.MinValue;
 
-                    var weights = PainoLista.Select(entry => entry.paino).ToArray();//weights muuttuu arrayksi joka hakee PainoListalta arvonsa
-                    var dates = PainoLista.Select(entry => entry.paiva).ToArray(); //dates muuttuu arrayksi joka hakee PainoListalta arvonsa
+                var newDateEntry = new PaivaLista(selectedDate);
+                PaivaList.Add(newDateEntry);
 
+                var newEntry = new Painoni(weight);
+                PainoLista.Add(newEntry);
+ 
+                var weights = PainoLista.Select(entry => entry.paino).ToArray();//weights muuttuu arrayksi joka hakee PainoListalta arvonsa
+                var dates = PaivaList.Select(entry => entry.date).ToArray();
+
+                if(weights.Length == dates.Length)
+                {
                     WpfPlot1.Plot.Clear();
                     WpfPlot1.Plot.Add.Scatter(dates, weights); //weights ja dates käytetään y ja x arvoina diagrammissa
                     var scatter = WpfPlot1.Plot.Add.Scatter(dates, weights); // Add scatter plot and capture it in a variable
@@ -81,10 +80,7 @@ namespace Ohjelmisto_projekti
 
                     WpfPlot1.Plot.Axes.AutoScale();
                     WpfPlot1.Refresh();
-                    
-                    lastEnteredDay = date;
                 }
-                
             }
             else
             {
@@ -92,14 +88,17 @@ namespace Ohjelmisto_projekti
             }
             PaivitaPaino();
             paino.Clear();
-            paivamaaraa.Clear();
         }
         public void PaivitaPaino()
         {
             var stringgi = "";
+            foreach (var entry in PaivaList)
+                stringgi += $" ({entry.date.ToString("dd/MM/yyyy")})"; //ADD TUNNISTETIETO FROM PAIVALISTA
+
             foreach (var entry in PainoLista)
-                stringgi += $" [{entry.tunnisteTieto}]  {entry.paino}kg - {entry.paiva}. Päivä \n";
-            listasto.Text = stringgi;
+                stringgi += $" {entry.paino}kg";
+
+            textBlock.Text = stringgi;
         }
 
     }
