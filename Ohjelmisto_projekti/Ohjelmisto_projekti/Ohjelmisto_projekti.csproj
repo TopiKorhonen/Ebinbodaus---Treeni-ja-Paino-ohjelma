@@ -15,6 +15,9 @@
     <None Remove="hamppari_Hiiri.png" />
     <None Remove="img_exit_default.png" />
     <None Remove="img_exit_Hiiri.png" />
+    <None Remove="img_kasipaino.png" />
+    <None Remove="img_koti.png" />
+    <None Remove="img_paino.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,6 +31,9 @@
     <Resource Include="hamppari_Hiiri.png" />
     <Resource Include="img_exit_default.png" />
     <Resource Include="img_exit_Hiiri.png" />
+    <Resource Include="img_kasipaino.png" />
+    <Resource Include="img_koti.png" />
+    <Resource Include="img_paino.png" />
   </ItemGroup>
 
 </Project>

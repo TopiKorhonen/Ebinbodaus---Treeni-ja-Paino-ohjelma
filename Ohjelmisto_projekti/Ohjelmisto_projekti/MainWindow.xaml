@@ -421,7 +421,7 @@
                             <StackPanel Orientation="Horizontal"
                                         Width="230">
 
-                                <Image Source="Assets/img_koti.png"
+                                <Image Source="/img_koti.png"
                                        Stretch="None"
                                        Margin="12,0,0,0"/>
 
@@ -452,7 +452,7 @@
                             <StackPanel Orientation="Horizontal"
                                         Width="230">
 
-                                <Image Source="Assets/img_kasipaino.png"
+                                <Image Source="/img_kasipaino.png"
                                        Stretch="None"
                                        Margin="12,0,0,0"/>
 
@@ -484,7 +484,7 @@
                             <StackPanel Orientation="Horizontal"
                                         Width="230">
 
-                                <Image Source="Assets/img_paino.png"
+                                <Image Source="/img_paino.png"
                                        Stretch="None"
                                        Margin="12,0,0,0"/>
                                 

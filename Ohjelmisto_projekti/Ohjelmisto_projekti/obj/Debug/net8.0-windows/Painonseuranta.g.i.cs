@@ -94,7 +94,7 @@ namespace Ohjelmisto_projekti {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Ohjelmisto_projekti;V1.0.0.0;component/painonseuranta.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Ohjelmisto_projekti;component/painonseuranta.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Painonseuranta.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
