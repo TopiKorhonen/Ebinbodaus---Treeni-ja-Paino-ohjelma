@@ -1,0 +1,24 @@
+﻿<Window x:Class="Ohjelmisto_projekti.Painonseuranta"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ohjelmisto_projekti"
+        xmlns:ScottPlot="clr-namespace:ScottPlot.WPF;assembly=ScottPlot.WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#242424"
+        Margin="3,0,-3,-1">
+        
+        <ScottPlot:WpfPlot x:Name="WpfPlot1" Margin="272,155,66,10" DisplayScale="1" IsEnabled="False" />
+        <Button Content="Lisää paino" HorizontalAlignment="Left" Margin="447,67,0,0" VerticalAlignment="Top" Height="39" Width="112" Click="Button_Click" IsDefault="True"/>
+        <TextBox x:Name="paino" HorizontalAlignment="Left" Margin="231,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157" Height="36" FontSize="24"/>
+        <TextBlock x:Name="l_paino" HorizontalAlignment="Left" Margin="231,17,0,0" TextWrapping="Wrap" Text="Paino" VerticalAlignment="Top" Height="30" Width="138" FontSize="24" FontFamily="Bahnschrift SemiBold" TextAlignment="Center"/>
+        <Calendar x:Name="calendar" HorizontalAlignment="Left" Margin="21,17,0,0" VerticalAlignment="Top" Height="168" FontSize="18"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="21,234,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.641,0.554" Height="172" Width="202" FontSize="16"/>
+
+    </Grid>
+
+
+</Window>
+

@@ -9,11 +9,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="background.png" />
+    <None Remove="closeBtn_default.png" />
+    <None Remove="hamppari_default.png" />
+    <None Remove="hamppari_Hiiri.png" />
+    <None Remove="img_exit_default.png" />
+    <None Remove="img_exit_Hiiri.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="ScottPlot.WPF" Version="5.0.21" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Assets\" />
+    <Resource Include="background.png" />
+    <Resource Include="closeBtn_default.png" />
+    <Resource Include="hamppari_default.png" />
+    <Resource Include="hamppari_Hiiri.png" />
+    <Resource Include="img_exit_default.png" />
+    <Resource Include="img_exit_Hiiri.png" />
   </ItemGroup>
 
 </Project>
