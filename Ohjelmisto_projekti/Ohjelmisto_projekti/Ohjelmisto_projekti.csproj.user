@@ -13,6 +13,12 @@
     <Compile Update="Painonseuranta.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="TMa.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Treenit.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainMenu.xaml">
@@ -22,6 +28,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Painonseuranta.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TMa.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Treenit.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

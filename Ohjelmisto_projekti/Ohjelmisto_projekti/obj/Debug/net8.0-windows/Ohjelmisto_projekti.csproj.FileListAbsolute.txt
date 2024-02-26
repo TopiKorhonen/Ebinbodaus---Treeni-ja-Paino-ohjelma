@@ -234,3 +234,11 @@ C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---
 C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\MainMenu.baml
 C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Painonseuranta.g.cs
 C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Painonseuranta.baml
+B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\MainMenu.g.cs
+B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Painonseuranta.g.cs
+B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\TMa.g.cs
+B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Treenit.g.cs
+B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\MainMenu.baml
+B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Painonseuranta.baml
+B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\TMa.baml
+B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Treenit.baml

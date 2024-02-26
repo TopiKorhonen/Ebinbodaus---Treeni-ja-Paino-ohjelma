@@ -406,8 +406,7 @@
                         <!--// Koti //-->
 
                         <ListViewItem HorizontalAlignment="Left"
-                                      Margin="0,0,0,15" MouseEnter="ListViewItem_MouseEnter"
-                                      >
+                                      Margin="0,0,0,15" MouseEnter="ListViewItem_MouseEnter">
                             <!--// Tooltip //-->
 
                             <ListViewItem.ToolTip>
@@ -419,7 +418,8 @@
                             </ListViewItem.ToolTip>
 
                             <StackPanel Orientation="Horizontal"
-                                        Width="230">
+                                        Width="230"
+                                        MouseLeftButtonDown="Paaruutu_Click">
 
                                 <Image Source="/img_koti.png"
                                        Stretch="None"
@@ -427,7 +427,7 @@
 
                                 <TextBlock Text="Koti"
                                            Margin="25,0,0,0"
-                                           Style="{StaticResource font_style}"/>
+                                           Style="{StaticResource font_style}" />
 
                             </StackPanel>
 
@@ -437,20 +437,25 @@
                         <!--// Treenit //-->
 
                         <ListViewItem HorizontalAlignment="Left"
-                                      Margin="0,0,0,15" MouseEnter="ListViewItem_MouseEnter"
-                                      >
+                                      Margin="0,0,0,15" MouseEnter="ListViewItem_MouseEnter">
                             <!--// Tooltip //-->
 
                             <ListViewItem.ToolTip>
 
                                 <ToolTip x:Name="tt_treeni"
                                          Content="treeni"
-                                         Style="{StaticResource tt_style}"/>    
+                                         Style="{StaticResource tt_style}"/>
+                                
 
                             </ListViewItem.ToolTip>
 
-                            <StackPanel Orientation="Horizontal"
-                                        Width="230">
+
+                            <StackPanel  x:Name="TextBlockTreenit"
+                                        Orientation="Horizontal"
+                                        Width="230"
+                                         MouseLeftButtonDown="Treenit_Click">
+                                
+                                
 
                                 <Image Source="/img_kasipaino.png"
                                        Stretch="None"
@@ -459,6 +464,7 @@
                                 <TextBlock Text="Treenit"
                                            Margin="25,0,0,0"
                                            Style="{StaticResource font_style}"/>
+
 
                             </StackPanel>
 
@@ -482,7 +488,8 @@
                             </ListViewItem.ToolTip>
 
                             <StackPanel Orientation="Horizontal"
-                                        Width="230">
+                                        Width="230"
+                                        MouseLeftButtonDown="PainoOsio_Click">
 
                                 <Image Source="/img_paino.png"
                                        Stretch="None"
@@ -490,7 +497,8 @@
                                 
                                 <TextBlock Text="Paino"
                                            Margin="25,0,0,0"
-                                           Style="{StaticResource font_style}"/>
+                                           Style="{StaticResource font_style}"
+                                           />
 
                             </StackPanel>
 

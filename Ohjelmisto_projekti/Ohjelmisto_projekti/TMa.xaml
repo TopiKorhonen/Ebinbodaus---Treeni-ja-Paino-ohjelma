@@ -1,0 +1,20 @@
+﻿<Window x:Class="Ohjelmisto_projekti.TMa"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ohjelmisto_projekti"
+        mc:Ignorable="d"
+        Title="TMa" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="MaLisays" Content="Lisää treeniin liikkeitä" HorizontalAlignment="Left" Margin="64,63,0,0" VerticalAlignment="Top" Height="24" Width="136" Click="MaLisays_Click" IsDefault="True"/>
+        <TextBox x:Name="Liike1" HorizontalAlignment="Left" Margin="60,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180"/>
+        <TextBox x:Name="Pituus1" HorizontalAlignment="Left" Margin="300,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180"/>
+        <TextBox x:Name="Paino1" HorizontalAlignment="Left" Margin="540,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180"/>
+        <TextBlock HorizontalAlignment="Left" Margin="64,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="fi-fi" Text="Liike"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="300,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Sarjan pituus"/>
+        <TextBlock HorizontalAlignment="Left" Margin="540,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Paino"/>
+        <TextBlock x:Name="OmaLiike" HorizontalAlignment="Left" Margin="89,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="570" FontSize="22" Height="212"/>
+
+    </Grid>
+</Window>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Ohjelmisto_projekti;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -61,6 +62,22 @@ namespace Navigation_Drawer_App
         private void CloseBtn_Click(object sender, RoutedEventArgs e)
         {
             Close();
+        }
+      
+        private void Treenit_Click(object sender, RoutedEventArgs e)
+        {
+            Treenit myWindow = new();
+            if (myWindow.ShowDialog() == true) ;
+        }
+        private void PainoOsio_Click(object sender, RoutedEventArgs e)
+        {
+            Painonseuranta myWindow = new();
+            if (myWindow.ShowDialog() == true) ;
+        }
+        private void Paaruutu_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow myWindow = new();
+            if (myWindow.ShowDialog() == true) ;
         }
     }
 }
