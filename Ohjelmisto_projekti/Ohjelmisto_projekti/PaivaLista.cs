@@ -10,9 +10,6 @@ namespace Ohjelmisto_projekti
     {
         public DateTime date { get; set; }
 
-        //TEE RANDOM NUMBER GENERATOR
-
-
         public PaivaLista(DateTime date)
         {
 
@@ -25,11 +22,6 @@ namespace Ohjelmisto_projekti
             {
                 return (10 * (5 + 2) / 2).ToString();
             }
-        }
-
-        internal static DateTime s()
-        {
-            throw new NotImplementedException();
         }
     }
 }

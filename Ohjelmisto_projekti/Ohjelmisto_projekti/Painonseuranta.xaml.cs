@@ -1,15 +1,12 @@
 ﻿using ScottPlot;
+using ScottPlot.AxisPanels;
 using ScottPlot.Plottables;
+using ScottPlot.TickGenerators;
 using ScottPlot.WPF;
 using System;
 using System.Collections.Generic;
-using System.Configuration;
-using System.Diagnostics;
-using System.Diagnostics.Eventing.Reader;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -17,7 +14,6 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Ohjelmisto_projekti
@@ -31,7 +27,9 @@ namespace Ohjelmisto_projekti
         List<PaivaLista> PaivaList = new List<PaivaLista>();
         public Painonseuranta()
         {
-            
+            InitializeComponent();
+
+            calendar.SelectedDate = DateTime.Now;
 
             double[] dataX = { 1, 2, 3, 4, 5, 6, 7 };
             WpfPlot1.Plot.Axes.DateTimeTicksBottom();
@@ -40,27 +38,30 @@ namespace Ohjelmisto_projekti
             WpfPlot1.Plot.Axes.Bottom.MajorTickStyle.Width = 2;
 
             WpfPlot1.Plot.Style.ColorAxes(ScottPlot.Color.FromHex("#ff9100"));
+
             WpfPlot1.Refresh();
 
             PaivitaPaino();
 
         }
 
-        private int lastEnteredDay = 0;
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             double weight;
             double.TryParse(paino.Text, out weight);
 
             DateTime date = calendar.SelectedDate ?? DateTime.MinValue;
-            // Get the selected date from the DatePicker
-
-
 
             if (calendar.SelectedDate != DateTime.MinValue)
             {
-                var selectedDate = calendar.SelectedDate ?? DateTime.MinValue;
+                // Tarkista, onko valitulle päivämäärälle jo merkintä
+                if (PaivaList.Any(entry => entry.date.Date == date.Date))
+                {
+                    MessageBox.Show("Tälle päivälle on jo olemassa merkintä. Valitse toinen päivä.");
+                    return;
+                }
 
+                var selectedDate = calendar.SelectedDate ?? DateTime.MinValue;
                 var newDateEntry = new PaivaLista(selectedDate);
                 PaivaList.Add(newDateEntry);
 
@@ -68,7 +69,9 @@ namespace Ohjelmisto_projekti
                 PainoLista.Add(newEntry);
 
                 var weights = PainoLista.Select(entry => entry.paino).ToArray();//weights muuttuu arrayksi joka hakee PainoListalta arvonsa
-                var dates = PaivaList.Select(entry => entry.date).ToArray();
+                var dates = PaivaList.Select(entry => entry.date.ToOADate()).ToArray();//dates muuttuu manuaalisesti floating-point numeroksi
+
+
 
                 if (weights.Length == dates.Length)
                 {
@@ -77,6 +80,18 @@ namespace Ohjelmisto_projekti
                     var scatter = WpfPlot1.Plot.Add.Scatter(dates, weights); // Add scatter plot and capture it in a variable
                     scatter.Color = ScottPlot.Color.FromHex("#ff002f"); // Set scatter color to red
                     scatter.LineWidth = 2;
+
+
+                    WpfPlot1.Plot.RenderManager.RenderStarting += (s, e) =>
+                    {
+                        Tick[] ticks = WpfPlot1.Plot.Axes.Bottom.TickGenerator.Ticks;
+                        for (int i = 0; i < ticks.Length; i++)
+                        {
+                            DateTime dt = DateTime.FromOADate(ticks[i].Position);
+                            string label = $"{dt:dd/MM/yyy}";
+                            ticks[i] = new Tick(ticks[i].Position, label);
+                        }
+                    };
 
                     WpfPlot1.Plot.Axes.AutoScale();
                     WpfPlot1.Refresh();
@@ -91,14 +106,20 @@ namespace Ohjelmisto_projekti
         }
         public void PaivitaPaino()
         {
-            var stringgi = "";
-            foreach (var entry in PaivaList)
-                stringgi += $" ({entry.date.ToString("dd/MM/yyyy")})"; //ADD TUNNISTETIETO FROM PAIVALISTA
+            var sortedEntries = PaivaList.Zip(PainoLista, (dateEntry, weightEntry) => new { DateEntry = dateEntry, WeightEntry = weightEntry })
+                                  .OrderBy(entry => entry.DateEntry.date)
+                                  .ToList();
 
-            foreach (var entry in PainoLista)
-                stringgi += $" {entry.paino}kg";
+            var stringBuilder = new StringBuilder();
 
-            textBlock.Text = stringgi;
+            foreach (var entry in sortedEntries)
+            {
+                var entryDate = entry.DateEntry.date.ToString("dd/MM/yyyy");
+                var entryWeight = entry.WeightEntry.paino + "kg";
+                stringBuilder.AppendLine($"({entryDate}) {entryWeight}");
+            }
+
+            textBlock.Text = stringBuilder.ToString();
         }
 
     }

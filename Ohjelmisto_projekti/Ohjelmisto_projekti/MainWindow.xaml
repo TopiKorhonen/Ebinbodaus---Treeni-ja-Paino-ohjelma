@@ -162,7 +162,7 @@
 
         <!--// taustan väri //-->
 
-        <Grid Background="#242424">
+        <Grid Background="#242424" AllowDrop="True" MouseDown="Window_MouseDown">
 
             <!--// Taustakuva //-->
 
@@ -406,7 +406,7 @@
                         <!--// Koti //-->
 
                         <ListViewItem HorizontalAlignment="Left"
-                                      Margin="0,0,0,15" MouseEnter="ListViewItem_MouseEnter">
+                                      Margin="0,0,0,15" MouseEnter="ListViewItem_MouseEnter" MouseLeftButtonUp="Paaruutu_Click">
                             <!--// Tooltip //-->
 
                             <ListViewItem.ToolTip>
@@ -437,7 +437,7 @@
                         <!--// Treenit //-->
 
                         <ListViewItem HorizontalAlignment="Left"
-                                      Margin="0,0,0,15" MouseEnter="ListViewItem_MouseEnter">
+                                      Margin="0,0,0,15" MouseEnter="ListViewItem_MouseEnter" MouseLeftButtonUp="Treenit_Click">
                             <!--// Tooltip //-->
 
                             <ListViewItem.ToolTip>
@@ -452,8 +452,7 @@
 
                             <StackPanel  x:Name="TextBlockTreenit"
                                         Orientation="Horizontal"
-                                        Width="230"
-                                         MouseLeftButtonDown="Treenit_Click">
+                                        Width="230">
                                 
                                 
 
@@ -475,7 +474,7 @@
                         <!--// Paino //-->
 
                         <ListViewItem HorizontalAlignment="Left"
-                                      Margin="0,0,0,15" MouseEnter="ListViewItem_MouseEnter"
+                                      Margin="0,0,0,15" MouseEnter="ListViewItem_MouseEnter" MouseLeftButtonUp="PainoOsio_Click"
                                       >
                             <!--// Tooltip //-->
 
@@ -488,8 +487,7 @@
                             </ListViewItem.ToolTip>
 
                             <StackPanel Orientation="Horizontal"
-                                        Width="230"
-                                        MouseLeftButtonDown="PainoOsio_Click">
+                                        Width="230">
 
                                 <Image Source="/img_paino.png"
                                        Stretch="None"

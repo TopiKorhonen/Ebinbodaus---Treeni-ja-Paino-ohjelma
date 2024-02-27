@@ -1,6 +1,7 @@
 ﻿using Ohjelmisto_projekti;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,9 +22,20 @@ namespace Navigation_Drawer_App
     /// </summary>
     public partial class MainWindow : Window
     {
+        private static MainWindow instance;
+
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        public static MainWindow GetInstance()
+        {
+            if (instance == null)
+            {
+                instance = new MainWindow();
+            }
+            return instance;
         }
 
         private void ListViewItem_MouseEnter(object sender, MouseEventArgs e)
@@ -59,6 +71,12 @@ namespace Navigation_Drawer_App
             Tg_Btn.IsChecked = false;
         }
 
+        private void Paaruutu_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = MainWindow.GetInstance();
+            mainWindow.Show();
+        }
+
         private void CloseBtn_Click(object sender, RoutedEventArgs e)
         {
             Close();
@@ -67,17 +85,20 @@ namespace Navigation_Drawer_App
         private void Treenit_Click(object sender, RoutedEventArgs e)
         {
             Treenit myWindow = new();
+            myWindow.Topmost = true;
             if (myWindow.ShowDialog() == true) ;
         }
         private void PainoOsio_Click(object sender, RoutedEventArgs e)
         {
             Painonseuranta myWindow = new();
+            myWindow.Topmost = true;
             if (myWindow.ShowDialog() == true) ;
         }
-        private void Paaruutu_Click(object sender, RoutedEventArgs e)
+
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            MainWindow myWindow = new();
-            if (myWindow.ShowDialog() == true) ;
+            if (e.ChangedButton == MouseButton.Left)
+                this.DragMove();
         }
     }
 }
