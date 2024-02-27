@@ -10,6 +10,7 @@
     <Grid Background="#242424"
         Margin="3,0,-3,-1">
 
+
         <ScottPlot:WpfPlot x:Name="WpfPlot1" Margin="272,155,66,10" DisplayScale="1" IsEnabled="False" ScrollViewer.VerticalScrollBarVisibility="Disabled" />
         <Button Content="Lisää paino" HorizontalAlignment="Left" Margin="488,67,0,0" VerticalAlignment="Top" Height="39" Width="112" Click="Button_Click" IsDefault="True"/>
         <TextBox x:Name="paino" HorizontalAlignment="Left" Margin="272,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157" Height="36" FontSize="24"/>

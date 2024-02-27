@@ -48,7 +48,11 @@ namespace Ohjelmisto_projekti
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             double weight;
-            double.TryParse(paino.Text, out weight);
+            if (!double.TryParse(paino.Text, out weight) || weight <= 0)
+            {
+                MessageBox.Show("Virheellinen syöte. Anna kelvollinen paino (kg).");
+                return;
+            }
 
             DateTime date = calendar.SelectedDate ?? DateTime.MinValue;
 
@@ -71,14 +75,19 @@ namespace Ohjelmisto_projekti
                 var weights = PainoLista.Select(entry => entry.paino).ToArray();//weights muuttuu arrayksi joka hakee PainoListalta arvonsa
                 var dates = PaivaList.Select(entry => entry.date.ToOADate()).ToArray();//dates muuttuu manuaalisesti floating-point numeroksi
 
-
-
                 if (weights.Length == dates.Length)
                 {
+                    var sortedEntries = PaivaList.Zip(PainoLista, (dateEntry, weightEntry) => new { DateEntry = dateEntry, WeightEntry = weightEntry })
+                              .OrderBy(entry => entry.DateEntry.date)
+                              .ToList();
+
+                    var sortedWeights = sortedEntries.Select(entry => entry.WeightEntry.paino).ToArray();
+                    var sortedDates = sortedEntries.Select(entry => entry.DateEntry.date.ToOADate()).ToArray();
+
                     WpfPlot1.Plot.Clear();
-                    WpfPlot1.Plot.Add.Scatter(dates, weights); //weights ja dates käytetään y ja x arvoina diagrammissa
-                    var scatter = WpfPlot1.Plot.Add.Scatter(dates, weights); // Add scatter plot and capture it in a variable
-                    scatter.Color = ScottPlot.Color.FromHex("#ff002f"); // Set scatter color to red
+
+                    var scatter = WpfPlot1.Plot.Add.Scatter(sortedDates, sortedWeights);
+                    scatter.Color = ScottPlot.Color.FromHex("#ff002f");
                     scatter.LineWidth = 2;
 
 
@@ -96,10 +105,6 @@ namespace Ohjelmisto_projekti
                     WpfPlot1.Plot.Axes.AutoScale();
                     WpfPlot1.Refresh();
                 }
-            }
-            else
-            {
-                MessageBox.Show("Virheellinen syöte. Anna kelvollinen paino (kg) ja päivämäärä (1-7).");
             }
             PaivitaPaino();
             paino.Clear();
