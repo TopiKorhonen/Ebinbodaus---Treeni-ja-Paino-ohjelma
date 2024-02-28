@@ -1,5 +1,7 @@
 ﻿using Navigation_Drawer_App;
 using ScottPlot;
+using Newtonsoft.Json;
+using System.IO;
 using ScottPlot.AxisPanels;
 using ScottPlot.Plottables;
 using ScottPlot.TickGenerators;
@@ -147,6 +149,9 @@ namespace Ohjelmisto_projekti
                     var sortedWeights = sortedEntries.Select(entry => entry.WeightEntry.paino).ToArray();
                     var sortedDates = sortedEntries.Select(entry => entry.DateEntry.date.ToOADate()).ToArray();
 
+                    // Save data to JSON
+                    SaveDataToJson(sortedDates, sortedWeights);
+
                     WpfPlot1.Plot.Clear();
 
                     var scatter = WpfPlot1.Plot.Add.Scatter(sortedDates, sortedWeights);
@@ -172,6 +177,26 @@ namespace Ohjelmisto_projekti
             }
             PaivitaPaino();
             paino.Clear();
+
+        }
+        private void SaveDataToJson(double[] dates, double[] weights)
+        {
+            // Create a new object to hold the data
+            var jsonData = new
+            {
+                Dates = dates,
+                Weights = weights
+            };
+
+            // Convert the data to JSON
+            string json = JsonConvert.SerializeObject(jsonData);
+
+            // Specify the file path to save the JSON file
+            string filePath = "data.json";
+
+            // Write the JSON string to the file
+            File.WriteAllText(filePath, json);
+   
         }
         public void PaivitaPaino()
         {
