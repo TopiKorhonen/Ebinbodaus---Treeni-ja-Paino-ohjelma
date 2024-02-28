@@ -181,20 +181,19 @@ namespace Ohjelmisto_projekti
         }
         private void SaveDataToJson(double[] dates, double[] weights)
         {
-            // Create a new object to hold the data
+           
             var jsonData = new
             {
                 Dates = dates,
                 Weights = weights
             };
 
-            // Convert the data to JSON
+         
             string json = JsonConvert.SerializeObject(jsonData);
 
-            // Specify the file path to save the JSON file
+
             string filePath = "data.json";
 
-            // Write the JSON string to the file
             File.WriteAllText(filePath, json);
    
         }
