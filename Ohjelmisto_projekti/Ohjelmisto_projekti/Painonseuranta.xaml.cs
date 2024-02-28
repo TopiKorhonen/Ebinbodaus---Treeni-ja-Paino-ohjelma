@@ -1,4 +1,5 @@
-﻿using ScottPlot;
+﻿using Navigation_Drawer_App;
+using ScottPlot;
 using ScottPlot.AxisPanels;
 using ScottPlot.Plottables;
 using ScottPlot.TickGenerators;
@@ -35,22 +36,84 @@ namespace Ohjelmisto_projekti
             WpfPlot1.Plot.Axes.DateTimeTicksBottom();
             WpfPlot1.Plot.Axes.SetLimits(1, 7, 60, 100);
             WpfPlot1.Plot.Axes.Bottom.MajorTickStyle.Length = 10;
-            WpfPlot1.Plot.Axes.Bottom.MajorTickStyle.Width = 2;
-
-            WpfPlot1.Plot.Style.ColorAxes(ScottPlot.Color.FromHex("#ff9100"));
+            WpfPlot1.Plot.Axes.Bottom.MajorTickStyle.Width = 3;
+            WpfPlot1.Plot.Style.Background(figure: ScottPlot.Color.FromHex("#242424"), data: ScottPlot.Color.FromHex("#242424"));
+            WpfPlot1.Plot.Style.ColorAxes(ScottPlot.Color.FromHex("#91276c"));
+            WpfPlot1.Plot.Style.ColorGrids(ScottPlot.Color.FromHex("#242424"));
 
             WpfPlot1.Refresh();
 
             PaivitaPaino();
 
         }
+        private void ListViewItem_MouseEnter(object sender, MouseEventArgs e)
+        {
+            // Set tooltip visibility
 
+            if (Tg_Btn.IsChecked == true)
+            {
+                tt_koti.Visibility = Visibility.Collapsed;
+                tt_treeni.Visibility = Visibility.Collapsed;
+                tt_paino.Visibility = Visibility.Collapsed;
+            }
+            else
+            {
+                tt_koti.Visibility = Visibility.Visible;
+                tt_treeni.Visibility = Visibility.Visible;
+                tt_paino.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void Tg_Btn_Unchecked(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void Tg_Btn_Checked(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void BG_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            Tg_Btn.IsChecked = false;
+        }
+
+        private void Paaruutu_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = MainWindow.GetInstance();
+            mainWindow.Show();
+        }
+
+        private void CloseBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void Treenit_Click(object sender, RoutedEventArgs e)
+        {
+            Treenit myWindow = new();
+            myWindow.Topmost = true;
+            if (myWindow.ShowDialog() == true) ;
+        }
+        private void PainoOsio_Click(object sender, RoutedEventArgs e)
+        {
+            Painonseuranta myWindow = new();
+            myWindow.Topmost = true;
+            if (myWindow.ShowDialog() == true) ;
+        }
+
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+                this.DragMove();
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             double weight;
             if (!double.TryParse(paino.Text, out weight) || weight <= 0)
             {
-                MessageBox.Show("Virheellinen syöte. Anna kelvollinen paino (kg).");
+                MessageBox.Show("Vi+rheellinen syöte. Anna kelvollinen paino (kg).");
                 return;
             }
 
@@ -87,8 +150,9 @@ namespace Ohjelmisto_projekti
                     WpfPlot1.Plot.Clear();
 
                     var scatter = WpfPlot1.Plot.Add.Scatter(sortedDates, sortedWeights);
-                    scatter.Color = ScottPlot.Color.FromHex("#ff002f");
-                    scatter.LineWidth = 2;
+                    scatter.Color = ScottPlot.Color.FromHex("#b5ff66");
+                    scatter.LineWidth = 5;
+                    scatter.MarkerSize = 13;
 
 
                     WpfPlot1.Plot.RenderManager.RenderStarting += (s, e) =>
