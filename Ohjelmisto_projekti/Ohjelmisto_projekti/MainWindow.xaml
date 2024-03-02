@@ -159,7 +159,6 @@
     </Window.Resources>
 
     <Grid>
-
         <!--// taustan väri //-->
 
         <Grid Background="#242424" AllowDrop="True" MouseDown="Window_MouseDown">

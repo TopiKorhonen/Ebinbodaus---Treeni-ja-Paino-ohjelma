@@ -83,26 +83,36 @@ namespace Ohjelmisto_projekti
 
         private void Paaruutu_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = MainWindow.GetInstance();
+            MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
+            this.Close();
         }
 
         private void CloseBtn_Click(object sender, RoutedEventArgs e)
         {
-            Close();
+            if (this is MainWindow)
+            {
+                this.Close();
+            }
+            else
+            {
+                MainWindow mainWindow = new MainWindow();
+                mainWindow.Show();
+                this.Close();
+            }
         }
 
         private void Treenit_Click(object sender, RoutedEventArgs e)
         {
-            Treenit myWindow = new();
-            myWindow.Topmost = true;
-            if (myWindow.ShowDialog() == true) ;
+            Treenit newWin = new Treenit();
+            newWin.Show();
+            this.Close();
         }
         private void PainoOsio_Click(object sender, RoutedEventArgs e)
         {
-            Painonseuranta myWindow = new();
-            myWindow.Topmost = true;
-            if (myWindow.ShowDialog() == true) ;
+            Painonseuranta newWin = new Painonseuranta();
+            newWin.Show();
+            this.Close();
         }
 
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
