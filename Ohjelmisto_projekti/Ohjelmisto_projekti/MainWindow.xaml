@@ -19,7 +19,7 @@
 
         <ImageBrush x:Key="tb_mouse_over"
                     ImageSource="/hamppari_Hiiri.png"/>
-
+                       
         <!--// tekstin fontin tyyli //-->
 
         <Style x:Key="font_style" TargetType="TextBlock">

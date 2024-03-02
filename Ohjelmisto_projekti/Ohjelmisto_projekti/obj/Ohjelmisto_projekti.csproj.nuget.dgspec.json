@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "O:\\sources\\Repos\\Ebinbodaus---Treeni-ja-Paino-ohjelma\\Ohjelmisto_projekti\\Ohjelmisto_projekti\\Ohjelmisto_projekti.csproj": {}
+    "C:\\Users\\John\\OneDrive - Hämeen ammattikorkeakoulu\\ohjelmointi\\C#\\Ebinbodaus---Treeni-ja-Paino-ohjelma\\Ohjelmisto_projekti\\Ohjelmisto_projekti\\Ohjelmisto_projekti.csproj": {}
   },
   "projects": {
-    "O:\\sources\\Repos\\Ebinbodaus---Treeni-ja-Paino-ohjelma\\Ohjelmisto_projekti\\Ohjelmisto_projekti\\Ohjelmisto_projekti.csproj": {
+    "C:\\Users\\John\\OneDrive - Hämeen ammattikorkeakoulu\\ohjelmointi\\C#\\Ebinbodaus---Treeni-ja-Paino-ohjelma\\Ohjelmisto_projekti\\Ohjelmisto_projekti\\Ohjelmisto_projekti.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "O:\\sources\\Repos\\Ebinbodaus---Treeni-ja-Paino-ohjelma\\Ohjelmisto_projekti\\Ohjelmisto_projekti\\Ohjelmisto_projekti.csproj",
+        "projectUniqueName": "C:\\Users\\John\\OneDrive - Hämeen ammattikorkeakoulu\\ohjelmointi\\C#\\Ebinbodaus---Treeni-ja-Paino-ohjelma\\Ohjelmisto_projekti\\Ohjelmisto_projekti\\Ohjelmisto_projekti.csproj",
         "projectName": "Ohjelmisto_projekti",
-        "projectPath": "O:\\sources\\Repos\\Ebinbodaus---Treeni-ja-Paino-ohjelma\\Ohjelmisto_projekti\\Ohjelmisto_projekti\\Ohjelmisto_projekti.csproj",
-        "packagesPath": "C:\\Users\\Omistaja\\.nuget\\packages\\",
-        "outputPath": "O:\\sources\\Repos\\Ebinbodaus---Treeni-ja-Paino-ohjelma\\Ohjelmisto_projekti\\Ohjelmisto_projekti\\obj\\",
+        "projectPath": "C:\\Users\\John\\OneDrive - Hämeen ammattikorkeakoulu\\ohjelmointi\\C#\\Ebinbodaus---Treeni-ja-Paino-ohjelma\\Ohjelmisto_projekti\\Ohjelmisto_projekti\\Ohjelmisto_projekti.csproj",
+        "packagesPath": "C:\\Users\\John\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\John\\OneDrive - Hämeen ammattikorkeakoulu\\ohjelmointi\\C#\\Ebinbodaus---Treeni-ja-Paino-ohjelma\\Ohjelmisto_projekti\\Ohjelmisto_projekti\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Omistaja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\John\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

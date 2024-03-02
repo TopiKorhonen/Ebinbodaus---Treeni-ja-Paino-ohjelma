@@ -261,4 +261,8 @@ C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmis
 C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\TMa.baml
 C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Treenit.baml
 C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+<<<<<<< Updated upstream
 O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+=======
+C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+>>>>>>> Stashed changes
