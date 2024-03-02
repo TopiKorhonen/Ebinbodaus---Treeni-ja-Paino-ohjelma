@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:Ohjelmisto_projekti"
         xmlns:ScottPlot="clr-namespace:ScottPlot.WPF;assembly=ScottPlot.WPF"
         mc:Ignorable="d"
-        Height="600" Width="800">
+        WindowStyle="None"
+        Height="600" Width="800" MouseDown="Window_MouseDown">
 
     <Window.Resources>
 
@@ -623,7 +624,6 @@
         <ScottPlot:WpfPlot x:Name="WpfPlot1" Margin="328,229,10,101" DisplayScale="1" IsEnabled="False" ScrollViewer.VerticalScrollBarVisibility="Disabled" />
         <Button Style="{DynamicResource ButtonStyle1}" Content="Lisää paino"  HorizontalAlignment="Left" Margin="558,64,0,0" VerticalAlignment="Top" Height="39" Width="112" Click="Button_Click" IsDefault="True"/>
         <TextBox x:Name="paino" HorizontalAlignment="Left" Margin="388,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" Height="36" FontSize="24" Text="Paino (Kg)" SelectionOpacity="100"/>
-        <TextBlock x:Name="l_paino" HorizontalAlignment="Center"  Margin="0,11,0,0" TextWrapping="Wrap" Text="Paino (Kg)" VerticalAlignment="Top" Height="30" Width="138" FontSize="24" FontFamily="Bahnschrift SemiBold" TextAlignment="Center" Foreground="White"/>
         <Viewbox Margin="79,41,429,315">
             <Calendar x:Name="calendar" HorizontalAlignment="Center" Height="307" VerticalAlignment="Center" Width="352" Style="{DynamicResource CalendarStyle1}" CalendarButtonStyle="{DynamicResource CalendarButtonStyle1}" CalendarDayButtonStyle="{DynamicResource CalendarDayButtonStyle1}" CalendarItemStyle="{DynamicResource CalendarItemStyle1}"/>
         </Viewbox>
@@ -638,7 +638,7 @@
 
                 <!--// Ohjelman sulkemisnappula //-->
 
-                <Grid Margin="0,0,-1,0">
+                <Grid Margin="0,0,-1,0" MouseDown="Window_MouseDown">
 
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
