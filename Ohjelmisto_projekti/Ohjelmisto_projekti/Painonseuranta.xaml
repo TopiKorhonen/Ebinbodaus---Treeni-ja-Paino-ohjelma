@@ -617,13 +617,16 @@
 
 
     </Window.Resources>
+
     <Grid Background="#242424"
         Margin="3,0,0,-1">
 
 
         <ScottPlot:WpfPlot x:Name="WpfPlot1" Margin="328,229,10,101" DisplayScale="1" IsEnabled="False" ScrollViewer.VerticalScrollBarVisibility="Disabled" />
         <Button Style="{DynamicResource ButtonStyle1}" Content="Lisää paino"  HorizontalAlignment="Left" Margin="558,64,0,0" VerticalAlignment="Top" Height="39" Width="112" Click="Button_Click" IsDefault="True"/>
-        <TextBox x:Name="paino" HorizontalAlignment="Left" Margin="388,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" Height="36" FontSize="24" Text="Paino (Kg)" SelectionOpacity="100"/>
+        <TextBox x:Name="painoTextBox" LostFocus="paino_LostFocus" HorizontalAlignment="Left" Margin="388,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" Height="39" FontSize="24" SelectionOpacity="100" VerticalContentAlignment="Center" BorderBrush="White"/>
+        <TextBox x:Name="paino_placeholder" GotFocus = "paino_placeholder_GotFocus" HorizontalAlignment="Left" Margin="388,64,0,0" Width="158" Height="39" FontSize="24" Text="Paino (Kg)" VerticalAlignment="Top" TextChanged="paino_placeholder_TextChanged" BorderBrush="White" Foreground="#FFABABAB" SelectionOpacity="100"/>
+
         <Viewbox Margin="79,41,429,315">
             <Calendar x:Name="calendar" HorizontalAlignment="Center" Height="307" VerticalAlignment="Center" Width="352" Style="{DynamicResource CalendarStyle1}" CalendarButtonStyle="{DynamicResource CalendarButtonStyle1}" CalendarDayButtonStyle="{DynamicResource CalendarDayButtonStyle1}" CalendarItemStyle="{DynamicResource CalendarItemStyle1}"/>
         </Viewbox>
@@ -969,4 +972,3 @@
 
 
 </Window>
-
