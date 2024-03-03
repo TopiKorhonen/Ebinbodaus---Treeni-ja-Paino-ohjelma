@@ -44,12 +44,11 @@ namespace Ohjelmisto_projekti
             WpfPlot1.Plot.Style.ColorGrids(ScottPlot.Color.FromHex("#242424"));
 
             LoadDataFromJson(); //Hakee tiedot json filestä
-           
+
 
             PaivitaPaino();
 
         }
-<<<<<<< HEAD
         private void LoadDataFromJson()
         {
             string filePath = "data.json";
@@ -77,10 +76,8 @@ namespace Ohjelmisto_projekti
             }
         }
 
-=======
 
-        //NAVIGAATIO
->>>>>>> fd381f49e57f657b216a9a65c66f573a90276bb3
+
         private void ListViewItem_MouseEnter(object sender, MouseEventArgs e)
         {
             // Set tooltip visibility

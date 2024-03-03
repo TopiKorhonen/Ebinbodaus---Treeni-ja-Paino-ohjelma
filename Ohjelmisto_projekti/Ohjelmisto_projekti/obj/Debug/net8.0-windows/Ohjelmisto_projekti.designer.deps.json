@@ -10,30 +10,9 @@
       "Microsoft.Win32.SystemEvents/4.7.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.9"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll": {
-            "assemblyVersion": "4.0.2.0",
-            "fileVersion": "4.700.19.56404"
-          }
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll": {
-            "rid": "win",
-            "assetType": "runtime",
-            "assemblyVersion": "4.0.2.0",
-            "fileVersion": "4.700.19.56404"
-          }
         }
       },
-      "Newtonsoft.Json/13.0.3": {
-        "runtime": {
-          "lib/net6.0/Newtonsoft.Json.dll": {
-            "assemblyVersion": "13.0.0.0",
-            "fileVersion": "13.0.3.27908"
-          }
-        }
-      },
+      "Newtonsoft.Json/13.0.3": {},
       "OpenTK/4.3.0": {
         "dependencies": {
           "OpenTK.Compute": "4.3.0",
@@ -47,107 +26,32 @@
           "OpenTK.Windowing.GraphicsLibraryFramework": "4.3.0"
         }
       },
-      "OpenTK.Compute/4.3.0": {
-        "runtime": {
-          "lib/netcoreapp3.1/OpenTK.Compute.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "OpenTK.Core/4.3.0": {
-        "runtime": {
-          "lib/netstandard2.1/OpenTK.Core.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.0.0.0"
-          }
-        }
-      },
+      "OpenTK.Compute/4.3.0": {},
+      "OpenTK.Core/4.3.0": {},
       "OpenTK.GLWpfControl/4.2.3": {
         "dependencies": {
           "OpenTK": "4.3.0"
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/GLWpfControl.dll": {
-            "assemblyVersion": "4.2.3.0",
-            "fileVersion": "4.2.3.0"
-          }
         }
       },
       "OpenTK.Graphics/4.3.0": {
         "dependencies": {
           "OpenTK.Core": "4.3.0",
           "OpenTK.Mathematics": "4.3.0"
-        },
-        "runtime": {
-          "lib/netstandard2.1/OpenTK.Graphics.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.0.0.0"
-          }
         }
       },
-      "OpenTK.Input/4.3.0": {
-        "runtime": {
-          "lib/netstandard2.0/OpenTK.Input.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.0.0.0"
-          }
-        }
-      },
-      "OpenTK.Mathematics/4.3.0": {
-        "runtime": {
-          "lib/netstandard2.1/OpenTK.Mathematics.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.0.0.0"
-          }
-        }
-      },
+      "OpenTK.Input/4.3.0": {},
+      "OpenTK.Mathematics/4.3.0": {},
       "OpenTK.OpenAL/4.3.0": {
         "dependencies": {
           "OpenTK.Core": "4.3.0",
           "OpenTK.Mathematics": "4.3.0"
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/OpenTK.OpenAL.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.0.0.0"
-          }
         }
       },
-      "OpenTK.redist.glfw/3.3.0-pre20200830200122": {
-        "runtimeTargets": {
-          "runtimes/linux-x64/native/libglfw.so.3.3": {
-            "rid": "linux-x64",
-            "assetType": "native",
-            "fileVersion": "0.0.0.0"
-          },
-          "runtimes/osx-x64/native/libglfw.3.dylib": {
-            "rid": "osx-x64",
-            "assetType": "native",
-            "fileVersion": "0.0.0.0"
-          },
-          "runtimes/win-x64/native/glfw3.dll": {
-            "rid": "win-x64",
-            "assetType": "native",
-            "fileVersion": "0.0.0.0"
-          },
-          "runtimes/win-x86/native/glfw3.dll": {
-            "rid": "win-x86",
-            "assetType": "native",
-            "fileVersion": "0.0.0.0"
-          }
-        }
-      },
+      "OpenTK.redist.glfw/3.3.0-pre20200830200122": {},
       "OpenTK.Windowing.Common/4.3.0": {
         "dependencies": {
           "OpenTK.Core": "4.3.0",
           "OpenTK.Mathematics": "4.3.0"
-        },
-        "runtime": {
-          "lib/netstandard2.1/OpenTK.Windowing.Common.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.0.0.0"
-          }
         }
       },
       "OpenTK.Windowing.Desktop/4.3.0": {
@@ -156,35 +60,17 @@
           "OpenTK.Mathematics": "4.3.0",
           "OpenTK.Windowing.Common": "4.3.0",
           "OpenTK.Windowing.GraphicsLibraryFramework": "4.3.0"
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/OpenTK.Windowing.Desktop.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.0.0.0"
-          }
         }
       },
       "OpenTK.Windowing.GraphicsLibraryFramework/4.3.0": {
         "dependencies": {
           "OpenTK.Core": "4.3.0",
           "OpenTK.redist.glfw": "3.3.0-pre20200830200122"
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/OpenTK.Windowing.GraphicsLibraryFramework.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.0.0.0"
-          }
         }
       },
       "ScottPlot/5.0.21": {
         "dependencies": {
           "SkiaSharp": "2.88.7"
-        },
-        "runtime": {
-          "lib/net8.0/ScottPlot.dll": {
-            "assemblyVersion": "5.0.21.0",
-            "fileVersion": "5.0.21.0"
-          }
         }
       },
       "ScottPlot.WPF/5.0.21": {
@@ -193,102 +79,32 @@
           "OpenTK.GLWpfControl": "4.2.3",
           "ScottPlot": "5.0.21",
           "SkiaSharp.Views.WPF": "2.88.7"
-        },
-        "runtime": {
-          "lib/net6.0-windows7.0/ScottPlot.WPF.dll": {
-            "assemblyVersion": "5.0.21.0",
-            "fileVersion": "5.0.21.0"
-          }
         }
       },
       "SkiaSharp/2.88.7": {
         "dependencies": {
           "SkiaSharp.NativeAssets.Win32": "2.88.7",
           "SkiaSharp.NativeAssets.macOS": "2.88.7"
-        },
-        "runtime": {
-          "lib/net6.0/SkiaSharp.dll": {
-            "assemblyVersion": "2.88.0.0",
-            "fileVersion": "2.88.7.0"
-          }
         }
       },
-      "SkiaSharp.NativeAssets.macOS/2.88.7": {
-        "runtimeTargets": {
-          "runtimes/osx/native/libSkiaSharp.dylib": {
-            "rid": "osx",
-            "assetType": "native",
-            "fileVersion": "0.0.0.0"
-          }
-        }
-      },
-      "SkiaSharp.NativeAssets.Win32/2.88.7": {
-        "runtimeTargets": {
-          "runtimes/win-arm64/native/libSkiaSharp.dll": {
-            "rid": "win-arm64",
-            "assetType": "native",
-            "fileVersion": "0.0.0.0"
-          },
-          "runtimes/win-x64/native/libSkiaSharp.dll": {
-            "rid": "win-x64",
-            "assetType": "native",
-            "fileVersion": "0.0.0.0"
-          },
-          "runtimes/win-x86/native/libSkiaSharp.dll": {
-            "rid": "win-x86",
-            "assetType": "native",
-            "fileVersion": "0.0.0.0"
-          }
-        }
-      },
+      "SkiaSharp.NativeAssets.macOS/2.88.7": {},
+      "SkiaSharp.NativeAssets.Win32/2.88.7": {},
       "SkiaSharp.Views.Desktop.Common/2.88.7": {
         "dependencies": {
           "SkiaSharp": "2.88.7",
           "System.Drawing.Common": "4.7.3"
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/SkiaSharp.Views.Desktop.Common.dll": {
-            "assemblyVersion": "2.88.0.0",
-            "fileVersion": "2.88.7.0"
-          }
         }
       },
       "SkiaSharp.Views.WPF/2.88.7": {
         "dependencies": {
           "SkiaSharp": "2.88.7",
           "SkiaSharp.Views.Desktop.Common": "2.88.7"
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/SkiaSharp.Views.WPF.dll": {
-            "assemblyVersion": "2.88.0.0",
-            "fileVersion": "2.88.7.0"
-          }
         }
       },
       "System.Drawing.Common/4.7.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.9",
           "Microsoft.Win32.SystemEvents": "4.7.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Drawing.Common.dll": {
-            "assemblyVersion": "4.0.0.2",
-            "fileVersion": "4.6.29719.1"
-          }
-        },
-        "runtimeTargets": {
-          "runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll": {
-            "rid": "unix",
-            "assetType": "runtime",
-            "assemblyVersion": "4.0.2.3",
-            "fileVersion": "4.700.21.51508"
-          },
-          "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll": {
-            "rid": "win",
-            "assetType": "runtime",
-            "assemblyVersion": "4.0.2.3",
-            "fileVersion": "4.700.21.51508"
-          }
         }
       }
     }

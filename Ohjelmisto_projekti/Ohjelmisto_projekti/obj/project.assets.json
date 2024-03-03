@@ -868,23 +868,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Omistaja\\.nuget\\packages\\": {},
+    "C:\\Users\\joona\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "O:\\sources\\Repos\\Ebinbodaus---Treeni-ja-Paino-ohjelma\\Ohjelmisto_projekti\\Ohjelmisto_projekti\\Ohjelmisto_projekti.csproj",
+      "projectUniqueName": "C:\\Users\\joona\\Ebinbodaus---Treeni-ja-Paino-ohjelma\\Ohjelmisto_projekti\\Ohjelmisto_projekti\\Ohjelmisto_projekti.csproj",
       "projectName": "Ohjelmisto_projekti",
-      "projectPath": "O:\\sources\\Repos\\Ebinbodaus---Treeni-ja-Paino-ohjelma\\Ohjelmisto_projekti\\Ohjelmisto_projekti\\Ohjelmisto_projekti.csproj",
-      "packagesPath": "C:\\Users\\Omistaja\\.nuget\\packages\\",
-      "outputPath": "O:\\sources\\Repos\\Ebinbodaus---Treeni-ja-Paino-ohjelma\\Ohjelmisto_projekti\\Ohjelmisto_projekti\\obj\\",
+      "projectPath": "C:\\Users\\joona\\Ebinbodaus---Treeni-ja-Paino-ohjelma\\Ohjelmisto_projekti\\Ohjelmisto_projekti\\Ohjelmisto_projekti.csproj",
+      "packagesPath": "C:\\Users\\joona\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\joona\\Ebinbodaus---Treeni-ja-Paino-ohjelma\\Ohjelmisto_projekti\\Ohjelmisto_projekti\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Omistaja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\joona\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
