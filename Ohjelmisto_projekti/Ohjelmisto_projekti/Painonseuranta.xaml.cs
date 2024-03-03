@@ -49,6 +49,7 @@ namespace Ohjelmisto_projekti
             PaivitaPaino();
 
         }
+<<<<<<< HEAD
         private void LoadDataFromJson()
         {
             string filePath = "data.json";
@@ -76,6 +77,10 @@ namespace Ohjelmisto_projekti
             }
         }
 
+=======
+
+        //NAVIGAATIO
+>>>>>>> fd381f49e57f657b216a9a65c66f573a90276bb3
         private void ListViewItem_MouseEnter(object sender, MouseEventArgs e)
         {
             // Set tooltip visibility
@@ -111,26 +116,36 @@ namespace Ohjelmisto_projekti
 
         private void Paaruutu_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = MainWindow.GetInstance();
+            MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
+            this.Close();
         }
 
         private void CloseBtn_Click(object sender, RoutedEventArgs e)
         {
-            Close();
+            if (this is MainWindow)
+            {
+                this.Close();
+            }
+            else
+            {
+                MainWindow mainWindow = new MainWindow();
+                mainWindow.Show();
+                this.Close();
+            }
         }
 
         private void Treenit_Click(object sender, RoutedEventArgs e)
         {
-            Treenit myWindow = new();
-            myWindow.Topmost = true;
-            if (myWindow.ShowDialog() == true) ;
+            Treenit newWin = new Treenit();
+            newWin.Show();
+            this.Close();
         }
         private void PainoOsio_Click(object sender, RoutedEventArgs e)
         {
-            Painonseuranta myWindow = new();
-            myWindow.Topmost = true;
-            if (myWindow.ShowDialog() == true) ;
+            Painonseuranta newWin = new Painonseuranta();
+            newWin.Show();
+            this.Close();
         }
 
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
@@ -138,12 +153,35 @@ namespace Ohjelmisto_projekti
             if (e.ChangedButton == MouseButton.Left)
                 this.DragMove();
         }
+
+        //PLACEHOLDER TEXTBOX
+        private void paino_placeholder_GotFocus(object sender, RoutedEventArgs e)
+        {
+            paino_placeholder.Visibility = Visibility.Collapsed;
+            painoTextBox.Visibility = Visibility.Visible;
+            painoTextBox.Focus();
+        }
+
+        private void paino_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrEmpty(painoTextBox.Text))
+            {
+                painoTextBox.Visibility = Visibility.Collapsed;
+                paino_placeholder.Visibility = Visibility.Visible;
+                paino_placeholder.Foreground.Opacity = 0.4;
+            }
+        }
+
+
+        //PAINOSEURANTA 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+
             double weight;
-            if (!double.TryParse(paino.Text, out weight) || weight <= 0)
+            if (!double.TryParse(painoTextBox.Text, out weight) || weight <= 0)
             {
-                MessageBox.Show("Vi+rheellinen syöte. Anna kelvollinen paino (kg).");
+                painoTextBox.Text = string.Empty;
+                MessageBox.Show("Virheellinen syöte. Anna kelvollinen painoTextBox (kg).");
                 return;
             }
 
@@ -154,12 +192,12 @@ namespace Ohjelmisto_projekti
                 // Tarkista, onko valitulle päivämäärälle jo merkintä
                 if (PaivaList.Any(entry => entry.date.Date == date.Date))
                 {
+                    paino_placeholder.Visibility = Visibility.Collapsed;
                     MessageBox.Show("Tälle päivälle on jo olemassa merkintä. Valitse toinen päivä.");
                     return;
                 }
 
-                var selectedDate = calendar.SelectedDate ?? DateTime.MinValue;
-                var newDateEntry = new PaivaLista(selectedDate);
+                var newDateEntry = new PaivaLista(date);
                 PaivaList.Add(newDateEntry);
 
                 var newEntry = new Painoni(weight);
@@ -204,7 +242,8 @@ namespace Ohjelmisto_projekti
                 }
             }
             PaivitaPaino();
-            paino.Clear();
+            painoTextBox.Clear();
+            paino_placeholder.Visibility = Visibility.Visible;
 
         }
         private void SaveDataToJson(double[] dates, double[] weights)
@@ -243,5 +282,9 @@ namespace Ohjelmisto_projekti
             textBlock.Text = stringBuilder.ToString();
         }
 
+        private void paino_placeholder_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

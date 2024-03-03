@@ -1,100 +1,9 @@
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\Ohjelmisto_projekti.exe
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\Ohjelmisto_projekti.deps.json
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\Ohjelmisto_projekti.runtimeconfig.json
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\Ohjelmisto_projekti.dll
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\Ohjelmisto_projekti.pdb
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\MainWindow.g.cs
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\App.g.cs
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti_MarkupCompile.cache
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti_MarkupCompile.lref
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\MainWindow.baml
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.g.resources
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.GeneratedMSBuildEditorConfig.editorconfig
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.AssemblyInfoInputs.cache
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.AssemblyInfo.cs
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.csproj.CoreCompileInputs.cache
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.sourcelink.json
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.dll
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\refint\Ohjelmisto_projekti.dll
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.pdb
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.genruntimeconfig.cache
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\ref\Ohjelmisto_projekti.dll
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\Ohjelmisto_projekti.exe
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\Ohjelmisto_projekti.deps.json
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\Ohjelmisto_projekti.runtimeconfig.json
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\Ohjelmisto_projekti.dll
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\Ohjelmisto_projekti.pdb
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\MainWindow.g.cs
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\App.g.cs
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti_MarkupCompile.cache
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti_MarkupCompile.lref
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\MainWindow.baml
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.g.resources
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.AssemblyInfoInputs.cache
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.AssemblyInfo.cs
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.csproj.CoreCompileInputs.cache
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.sourcelink.json
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.dll
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\refint\Ohjelmisto_projekti.dll
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.pdb
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.genruntimeconfig.cache
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\ref\Ohjelmisto_projekti.dll
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.csproj.AssemblyReference.cache
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.Compute.dll
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.Core.dll
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\GLWpfControl.dll
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.Graphics.dll
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.Input.dll
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.Mathematics.dll
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.OpenAL.dll
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.Windowing.Common.dll
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.Windowing.Desktop.dll
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.Windowing.GraphicsLibraryFramework.dll
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\ScottPlot.dll
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\ScottPlot.WPF.dll
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\SkiaSharp.dll
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\SkiaSharp.Views.Desktop.Common.dll
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\SkiaSharp.Views.WPF.dll
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\runtimes\linux-x64\native\libglfw.so.3.3
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\runtimes\osx-x64\native\libglfw.3.dylib
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\runtimes\win-x64\native\glfw3.dll
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\runtimes\win-x86\native\glfw3.dll
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\runtimes\osx\native\libSkiaSharp.dylib
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\runtimes\win-arm64\native\libSkiaSharp.dll
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\runtimes\win-x64\native\libSkiaSharp.dll
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\runtimes\win-x86\native\libSkiaSharp.dll
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.csproj.CopyComplete
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.Compute.dll
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.Core.dll
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\GLWpfControl.dll
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.Graphics.dll
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.Input.dll
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.Mathematics.dll
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.OpenAL.dll
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.Windowing.Common.dll
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.Windowing.Desktop.dll
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.Windowing.GraphicsLibraryFramework.dll
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\ScottPlot.dll
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\ScottPlot.WPF.dll
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\SkiaSharp.dll
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\SkiaSharp.Views.Desktop.Common.dll
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\SkiaSharp.Views.WPF.dll
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\runtimes\linux-x64\native\libglfw.so.3.3
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\runtimes\osx-x64\native\libglfw.3.dylib
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\runtimes\win-x64\native\glfw3.dll
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\runtimes\win-x86\native\glfw3.dll
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\runtimes\osx\native\libSkiaSharp.dylib
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\runtimes\win-arm64\native\libSkiaSharp.dll
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\runtimes\win-x64\native\libSkiaSharp.dll
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\runtimes\win-x86\native\libSkiaSharp.dll
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.csproj.AssemblyReference.cache
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.csproj.CopyComplete
 O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\Ohjelmisto_projekti.exe
 O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\Ohjelmisto_projekti.deps.json
 O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\Ohjelmisto_projekti.runtimeconfig.json
 O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\Ohjelmisto_projekti.dll
 O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\Ohjelmisto_projekti.pdb
+O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
 O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.Compute.dll
 O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.Core.dll
 O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\GLWpfControl.dll
@@ -119,11 +28,19 @@ O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelm
 O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\runtimes\win-x64\native\libSkiaSharp.dll
 O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\runtimes\win-x86\native\libSkiaSharp.dll
 O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.csproj.AssemblyReference.cache
+O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\MainMenu.g.cs
 O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\MainWindow.g.cs
+O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Painonseuranta.g.cs
+O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\TMa.g.cs
+O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Treenit.g.cs
 O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\App.g.cs
 O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti_MarkupCompile.cache
 O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti_MarkupCompile.lref
+O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\MainMenu.baml
 O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\MainWindow.baml
+O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Painonseuranta.baml
+O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\TMa.baml
+O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Treenit.baml
 O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.g.resources
 O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.GeneratedMSBuildEditorConfig.editorconfig
 O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.AssemblyInfoInputs.cache
@@ -136,128 +53,3 @@ O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelm
 O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.pdb
 O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.genruntimeconfig.cache
 O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\ref\Ohjelmisto_projekti.dll
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\Ohjelmisto_projekti.exe
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\Ohjelmisto_projekti.deps.json
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\Ohjelmisto_projekti.runtimeconfig.json
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\Ohjelmisto_projekti.dll
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\Ohjelmisto_projekti.pdb
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.Compute.dll
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.Core.dll
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\GLWpfControl.dll
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.Graphics.dll
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.Input.dll
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.Mathematics.dll
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.OpenAL.dll
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.Windowing.Common.dll
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.Windowing.Desktop.dll
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.Windowing.GraphicsLibraryFramework.dll
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\ScottPlot.dll
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\ScottPlot.WPF.dll
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\SkiaSharp.dll
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\SkiaSharp.Views.Desktop.Common.dll
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\SkiaSharp.Views.WPF.dll
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\runtimes\linux-x64\native\libglfw.so.3.3
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\runtimes\osx-x64\native\libglfw.3.dylib
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\runtimes\win-x64\native\glfw3.dll
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\runtimes\win-x86\native\glfw3.dll
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\runtimes\osx\native\libSkiaSharp.dylib
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\runtimes\win-arm64\native\libSkiaSharp.dll
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\runtimes\win-x64\native\libSkiaSharp.dll
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\runtimes\win-x86\native\libSkiaSharp.dll
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.csproj.AssemblyReference.cache
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\MainWindow.g.cs
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\App.g.cs
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti_MarkupCompile.cache
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti_MarkupCompile.lref
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\MainWindow.baml
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.g.resources
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.AssemblyInfoInputs.cache
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.AssemblyInfo.cs
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.csproj.CoreCompileInputs.cache
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.sourcelink.json
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.csproj.CopyComplete
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.dll
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\refint\Ohjelmisto_projekti.dll
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.pdb
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.genruntimeconfig.cache
-C:\Users\mirok\Documents\Gitsekoilua\Ohjelmisto_projekti\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\ref\Ohjelmisto_projekti.dll
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\Ohjelmisto_projekti.exe
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\Ohjelmisto_projekti.deps.json
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\Ohjelmisto_projekti.runtimeconfig.json
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\Ohjelmisto_projekti.dll
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\Ohjelmisto_projekti.pdb
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.Compute.dll
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.Core.dll
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\GLWpfControl.dll
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.Graphics.dll
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.Input.dll
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.Mathematics.dll
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.OpenAL.dll
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.Windowing.Common.dll
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.Windowing.Desktop.dll
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\OpenTK.Windowing.GraphicsLibraryFramework.dll
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\ScottPlot.dll
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\ScottPlot.WPF.dll
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\SkiaSharp.dll
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\SkiaSharp.Views.Desktop.Common.dll
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\SkiaSharp.Views.WPF.dll
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\runtimes\linux-x64\native\libglfw.so.3.3
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\runtimes\osx-x64\native\libglfw.3.dylib
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\runtimes\win-x64\native\glfw3.dll
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\runtimes\win-x86\native\glfw3.dll
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\runtimes\osx\native\libSkiaSharp.dylib
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\runtimes\win-arm64\native\libSkiaSharp.dll
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\runtimes\win-x64\native\libSkiaSharp.dll
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\runtimes\win-x86\native\libSkiaSharp.dll
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.csproj.AssemblyReference.cache
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\MainWindow.g.cs
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\App.g.cs
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti_MarkupCompile.cache
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti_MarkupCompile.lref
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\MainWindow.baml
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.g.resources
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.AssemblyInfoInputs.cache
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.AssemblyInfo.cs
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.csproj.CoreCompileInputs.cache
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.sourcelink.json
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.csproj.CopyComplete
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.dll
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\refint\Ohjelmisto_projekti.dll
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.pdb
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.genruntimeconfig.cache
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\ref\Ohjelmisto_projekti.dll
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\MainMenu.g.cs
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\MainMenu.baml
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\MainMenu.g.cs
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\MainMenu.baml
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Painonseuranta.g.cs
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Painonseuranta.baml
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\MainMenu.g.cs
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Painonseuranta.g.cs
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\TMa.g.cs
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Treenit.g.cs
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\MainMenu.baml
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Painonseuranta.baml
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\TMa.baml
-B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Treenit.baml
-O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\MainMenu.g.cs
-O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Painonseuranta.g.cs
-O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\TMa.g.cs
-O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Treenit.g.cs
-O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\MainMenu.baml
-O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Painonseuranta.baml
-O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\TMa.baml
-O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Treenit.baml
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\TMa.g.cs
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Treenit.g.cs
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\TMa.baml
-C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Treenit.baml
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Painonseuranta.g.cs
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\TMa.g.cs
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Treenit.g.cs
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Painonseuranta.baml
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\TMa.baml
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Treenit.baml
-C:\Users\joona\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\bin\Debug\net8.0-windows\Newtonsoft.Json.dll

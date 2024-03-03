@@ -73,26 +73,36 @@ namespace Navigation_Drawer_App
 
         private void Paaruutu_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = MainWindow.GetInstance();
+            MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
+            this.Close();
         }
 
         private void CloseBtn_Click(object sender, RoutedEventArgs e)
         {
-            Close();
+            if (this is MainWindow)
+            {
+                this.Close();
+            }
+            else
+            {
+                MainWindow mainWindow = new MainWindow();
+                mainWindow.Show();
+                this.Close();
+            }
         }
       
         private void Treenit_Click(object sender, RoutedEventArgs e)
         {
-            Treenit myWindow = new();
-            myWindow.Topmost = true;
-            if (myWindow.ShowDialog() == true) ;
+            Treenit secondWin = new Treenit();
+            secondWin.Show();
+            this.Close();
         }
         private void PainoOsio_Click(object sender, RoutedEventArgs e)
         {
-            Painonseuranta myWindow = new();
-            myWindow.Topmost = true;
-            if (myWindow.ShowDialog() == true) ;
+            Painonseuranta secondWin = new Painonseuranta();
+            secondWin.Show();
+            this.Close();
         }
 
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)

@@ -19,7 +19,7 @@
 
         <ImageBrush x:Key="tb_mouse_over"
                     ImageSource="/hamppari_Hiiri.png"/>
-
+                       
         <!--// tekstin fontin tyyli //-->
 
         <Style x:Key="font_style" TargetType="TextBlock">
@@ -159,7 +159,6 @@
     </Window.Resources>
 
     <Grid>
-
         <!--// taustan väri //-->
 
         <Grid Background="#242424" AllowDrop="True" MouseDown="Window_MouseDown">

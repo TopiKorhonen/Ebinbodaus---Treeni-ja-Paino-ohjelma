@@ -1,0 +1,22 @@
+﻿<Window x:Class="Ohjelmisto_projekti.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ohjelmisto_projekti"
+        xmlns:ScottPlot="clr-namespace:ScottPlot.WPF;assembly=ScottPlot.WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="3,0,-3,-1">
+        <ScottPlot:WpfPlot x:Name="WpfPlot1" Margin="57,155,270,10" DisplayScale="1" IsEnabled="False" />
+        <Button Content="Lisää paino" HorizontalAlignment="Left" Margin="518,46,0,0" VerticalAlignment="Top" Height="39" Width="112" Click="Button_Click" IsDefault="True"/>
+        <TextBox x:Name="paino" HorizontalAlignment="Left" Margin="135,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="l_paino" HorizontalAlignment="Left" Margin="135,64,0,0" TextWrapping="Wrap" Text="Paino" VerticalAlignment="Top"/>
+        <TextBox x:Name="paivamaaraa" HorizontalAlignment="Left" Margin="294,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="l_paivamaaraa" HorizontalAlignment="Left" Margin="294,64,0,0" TextWrapping="Wrap" Text="Viikon pvä (1-7)" VerticalAlignment="Top"/>
+        <TextBlock x:Name="listasto" HorizontalAlignment="Left" Margin="590,128,0,0" TextWrapping="Wrap" Text="Painot" VerticalAlignment="Top"/>
+        <DatePicker x:Name="datePicker" HorizontalAlignment="Left" Margin="135,10,0,0" VerticalAlignment="Top" Height="27" Width="120"/>
+    </Grid>
+
+
+</Window>
