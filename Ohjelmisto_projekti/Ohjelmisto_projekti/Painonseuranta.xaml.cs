@@ -43,11 +43,39 @@ namespace Ohjelmisto_projekti
             WpfPlot1.Plot.Style.ColorAxes(ScottPlot.Color.FromHex("#91276c"));
             WpfPlot1.Plot.Style.ColorGrids(ScottPlot.Color.FromHex("#242424"));
 
-            WpfPlot1.Refresh();
+            LoadDataFromJson(); //Hakee tiedot json filestä
+           
 
             PaivitaPaino();
 
         }
+        private void LoadDataFromJson()
+        {
+            string filePath = "data.json";
+            if (File.Exists(filePath))
+            {
+                string json = File.ReadAllText(filePath);
+                var jsonData = JsonConvert.DeserializeObject<dynamic>(json);
+
+                double[] dates = jsonData.Dates.ToObject<double[]>();
+                double[] weights = jsonData.Weights.ToObject<double[]>();
+
+                // Add loaded data to your lists
+                PaivaList.Clear();
+                PainoLista.Clear();
+
+                for (int i = 0; i < dates.Length; i++)
+                {
+                    PaivaList.Add(new PaivaLista(DateTime.FromOADate(dates[i])));
+                    PainoLista.Add(new Painoni(weights[i]));
+                }
+            }
+            else
+            {
+                MessageBox.Show("Data file not found.");
+            }
+        }
+
         private void ListViewItem_MouseEnter(object sender, MouseEventArgs e)
         {
             // Set tooltip visibility
