@@ -46,8 +46,39 @@ namespace Ohjelmisto_projekti
             LoadDataFromJson(); //Hakee tiedot json filestä
 
 
-            PaivitaPaino();
 
+            PlotData(); //hakee diagrammin tiedot, jotta viiva näkyy heti kun käynnistää softan!
+
+        }
+        private void PlotData() 
+        {
+            var sortedEntries = PaivaList.Zip(PainoLista, (dateEntry, weightEntry) => new { DateEntry = dateEntry, WeightEntry = weightEntry })
+                .OrderBy(entry => entry.DateEntry.date)
+                .ToList();
+
+            var sortedWeights = sortedEntries.Select(entry => entry.WeightEntry.paino).ToArray();
+            var sortedDates = sortedEntries.Select(entry => entry.DateEntry.date.ToOADate()).ToArray();
+
+            WpfPlot1.Plot.Clear();
+
+            var scatter = WpfPlot1.Plot.Add.Scatter(sortedDates, sortedWeights);
+            scatter.Color = ScottPlot.Color.FromHex("#b5ff66");
+            scatter.LineWidth = 5;
+            scatter.MarkerSize = 13;
+
+            WpfPlot1.Plot.RenderManager.RenderStarting += (s, e) =>
+            {
+                Tick[] ticks = WpfPlot1.Plot.Axes.Bottom.TickGenerator.Ticks;
+                for (int i = 0; i < ticks.Length; i++)
+                {
+                    DateTime dt = DateTime.FromOADate(ticks[i].Position);
+                    string label = $"{dt:dd/MM/yyy}";
+                    ticks[i] = new Tick(ticks[i].Position, label);
+                }
+            };
+
+            WpfPlot1.Plot.Axes.AutoScale();
+            WpfPlot1.Refresh();
         }
         private void LoadDataFromJson()
         {
@@ -60,7 +91,7 @@ namespace Ohjelmisto_projekti
                 double[] dates = jsonData.Dates.ToObject<double[]>();
                 double[] weights = jsonData.Weights.ToObject<double[]>();
 
-                // Add loaded data to your lists
+               
                 PaivaList.Clear();
                 PainoLista.Clear();
 
@@ -69,6 +100,8 @@ namespace Ohjelmisto_projekti
                     PaivaList.Add(new PaivaLista(DateTime.FromOADate(dates[i])));
                     PainoLista.Add(new Painoni(weights[i]));
                 }
+                 PaivitaPaino();
+                WpfPlot1.Refresh();
             }
             else
             {
@@ -212,8 +245,8 @@ namespace Ohjelmisto_projekti
                     var sortedWeights = sortedEntries.Select(entry => entry.WeightEntry.paino).ToArray();
                     var sortedDates = sortedEntries.Select(entry => entry.DateEntry.date.ToOADate()).ToArray();
 
-                    // Save data to JSON
-                    SaveDataToJson(sortedDates, sortedWeights);
+                  
+                    SaveDataToJson(sortedDates, sortedWeights); //Vie tiedot json fileen
 
                     WpfPlot1.Plot.Clear();
 
