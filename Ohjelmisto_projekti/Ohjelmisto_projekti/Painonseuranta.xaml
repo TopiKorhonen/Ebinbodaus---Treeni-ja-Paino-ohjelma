@@ -631,8 +631,7 @@
             </Button.Resources>
 
         </Button>
-        <TextBox x:Name="painoTextBox" LostFocus="paino_LostFocus" HorizontalAlignment="Left" Margin="388,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" Height="39" FontSize="24" SelectionOpacity="100" VerticalContentAlignment="Center" BorderBrush="White"/>
-        <TextBox x:Name="paino_placeholder" HorizontalAlignment="Left" Margin="388,67,0,0" Background="#b5ff66" TextWrapping="Wrap" VerticalAlignment="Top" Width="165" Height="36" FontSize="13" TextAlignment="Center" Text="Paino (Kg)" SelectionOpacity="100">
+        <TextBox x:Name="paino_placeholder" HorizontalAlignment="Left" Margin="382,67,0,0" Background="#b5ff66" TextWrapping="Wrap" VerticalAlignment="Top" Width="165" Height="36" FontSize="13" TextAlignment="Center" Text="Paino (Kg)" SelectionOpacity="100" RenderTransformOrigin="0.6,2.722">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -645,17 +644,17 @@
             <Calendar x:Name="calendar" HorizontalAlignment="Center" Height="307" VerticalAlignment="Center" Width="352" Style="{DynamicResource CalendarStyle1}" CalendarButtonStyle="{DynamicResource CalendarButtonStyle1}" CalendarDayButtonStyle="{DynamicResource CalendarDayButtonStyle1}" CalendarItemStyle="{DynamicResource CalendarItemStyle1}"/>
         </Viewbox>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="112,313,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.516,0.506" Height="239" Width="184" FontSize="16" Foreground="White"/>
-        <Grid Margin="-10,-10,10,10">
+        <Grid>
 
             <!--// taustan väri //-->
 
-            <Grid  AllowDrop="True" MouseDown="Window_MouseDown" Margin="10,10,-10,-10">
+            <Grid  AllowDrop="True" MouseDown="Window_MouseDown">
 
                 <!--// Taustakuva //-->
 
                 <!--// Ohjelman sulkemisnappula //-->
 
-                <Grid Margin="0,0,-1,0" MouseDown="Window_MouseDown">
+                <Grid Margin="0,-26,-1,26" MouseDown="Window_MouseDown">
 
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
