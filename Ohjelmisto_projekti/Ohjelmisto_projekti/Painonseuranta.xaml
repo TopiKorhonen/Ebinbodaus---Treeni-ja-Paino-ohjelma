@@ -623,7 +623,7 @@
 
 
         <ScottPlot:WpfPlot x:Name="WpfPlot1" Margin="328,229,10,101" DisplayScale="1" IsEnabled="False" ScrollViewer.VerticalScrollBarVisibility="Disabled" />
-        <Button Style="{DynamicResource ButtonStyle1}" Content="Lisää paino" Background="#91276c" HorizontalAlignment="Left" Margin="558,67,0,0" VerticalAlignment="Top" Height="36" Width="164" Click="Button_Click" IsDefault="True">
+        <Button Style="{DynamicResource ButtonStyle1}" Content="Lisää paino" Background="#91276c" HorizontalAlignment="Left" Margin="558,67,0,0" VerticalAlignment="Top" Height="36" Width="164" Click="Button_Click" IsDefault="True" FontSize="18" FontFamily="Lato Semibold" Foreground="Black" BorderBrush="#FF1D1D1D">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -631,7 +631,15 @@
             </Button.Resources>
 
         </Button>
-        <TextBox x:Name="paino_placeholder" HorizontalAlignment="Left" Margin="382,67,0,0" Background="#b5ff66" TextWrapping="Wrap" VerticalAlignment="Top" Width="165" Height="36" FontSize="13" TextAlignment="Center" Text="Paino (Kg)" SelectionOpacity="100" RenderTransformOrigin="0.6,2.722">
+        <TextBox x:Name="painoTextBox" LostFocus="paino_LostFocus" HorizontalAlignment="Left" Margin="382,67,0,0" Background="White" TextWrapping="Wrap" VerticalAlignment="Top" Width="165" Height="36" FontSize="22" TextAlignment="Center" SelectionOpacity="100" RenderTransformOrigin="0.6,2.722" BorderBrush="{x:Null}" CaretBrush="#FF464646" SelectionBrush="#FFB5FF66">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+
+        <TextBox x:Name="paino_placeholder" GotFocus="paino_placeholder_GotFocus" HorizontalAlignment="Left" Margin="382,67,0,0" VerticalAlignment="Top" Width="165" Height="36" FontSize="22" Text="Paino (Kg)" SelectionOpacity="100" RenderTransformOrigin="0.6,2.722" Foreground="#FFD6D6D6" BorderBrush="{x:Null}" TextAlignment="Center">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="10"/>

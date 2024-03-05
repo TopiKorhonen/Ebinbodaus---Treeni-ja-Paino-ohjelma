@@ -211,7 +211,7 @@ namespace Ohjelmisto_projekti
             if (!double.TryParse(painoTextBox.Text, out weight) || weight <= 0)
             {
                 painoTextBox.Text = string.Empty;
-                MessageBox.Show("Virheellinen syöte. Anna kelvollinen painoTextBox (kg).");
+                MessageBox.Show("Virheellinen Syöte! Anna kelvollinen paino (Kg).");
                 return;
             }
 
@@ -222,7 +222,6 @@ namespace Ohjelmisto_projekti
                 // Tarkista, onko valitulle päivämäärälle jo merkintä
                 if (PaivaList.Any(entry => entry.date.Date == date.Date))
                 {
-                    paino_placeholder.Visibility = Visibility.Collapsed;
                     MessageBox.Show("Tälle päivälle on jo olemassa merkintä. Valitse toinen päivä.");
                     return;
                 }
