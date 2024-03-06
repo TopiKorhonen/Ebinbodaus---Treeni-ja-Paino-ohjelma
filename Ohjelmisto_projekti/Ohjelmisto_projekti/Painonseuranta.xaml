@@ -7,7 +7,11 @@
         xmlns:ScottPlot="clr-namespace:ScottPlot.WPF;assembly=ScottPlot.WPF"
         mc:Ignorable="d"
         WindowStyle="None"
-        Height="600" Width="800" MouseDown="Window_MouseDown">
+        Height="600"
+        Width="800"
+        ResizeMode="NoResize"
+        MouseDown="Window_MouseDown"
+        WindowStartupLocation="CenterScreen">
 
     <Window.Resources>
 
@@ -630,6 +634,13 @@
                 </Style>
             </Button.Resources>
 
+        </Button>
+        <Button Content="Poista Paino" Background="#91276c" Click="DeleteButton_Click" HorizontalAlignment="Left" Margin="558,108,0,0" VerticalAlignment="Top" Height="36" Width="164" FontSize="18" FontFamily="Lato Semibold" Foreground="Black" BorderBrush="#FF1D1D1D">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
         </Button>
         <TextBox x:Name="painoTextBox" LostFocus="paino_LostFocus" HorizontalAlignment="Left" Margin="382,67,0,0" Background="White" TextWrapping="Wrap" VerticalAlignment="Top" Width="165" Height="36" FontSize="22" TextAlignment="Center" SelectionOpacity="100" RenderTransformOrigin="0.6,2.722" BorderBrush="{x:Null}" CaretBrush="#FF464646" SelectionBrush="#FFB5FF66">
             <TextBox.Resources>

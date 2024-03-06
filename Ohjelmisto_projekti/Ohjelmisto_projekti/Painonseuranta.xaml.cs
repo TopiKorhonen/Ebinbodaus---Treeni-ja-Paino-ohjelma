@@ -80,6 +80,43 @@ namespace Ohjelmisto_projekti
             WpfPlot1.Plot.Axes.AutoScale();
             WpfPlot1.Refresh();
         }
+        private void DeleteData(DateTime selectedDate)
+        {
+           
+            int index = PaivaList.FindIndex(entry => entry.date.Date == selectedDate.Date);
+
+            if (index >= 0)
+            {
+                PaivaList.RemoveAt(index);
+                PainoLista.RemoveAt(index);
+
+                PlotData();
+                UpdateJsonData();
+                LoadDataFromJson();
+            }
+        }
+
+        private void DeleteButton_Click(object sender, RoutedEventArgs e)
+        {
+            DateTime selectedDate = calendar.SelectedDate ?? DateTime.MinValue;
+
+            if (selectedDate != DateTime.MinValue)
+            {
+                DeleteData(selectedDate);
+            }
+            else
+            {
+                MessageBox.Show("Valitse pvämäärä ennen poistamista.");
+            }
+        }
+
+        private void UpdateJsonData()
+        {
+            var dates = PaivaList.Select(entry => entry.date.ToOADate()).ToArray();
+            var weights = PainoLista.Select(entry => entry.paino).ToArray();
+
+            SaveDataToJson(dates, weights);
+        }
         private void LoadDataFromJson()
         {
             string filePath = "data.json";
