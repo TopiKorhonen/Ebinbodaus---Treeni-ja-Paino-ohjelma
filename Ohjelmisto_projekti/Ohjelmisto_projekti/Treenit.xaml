@@ -10,12 +10,12 @@
 
     <Grid x:Name="Piilo">
         <Button x:Name="Maanantai" Content="Maanantai" HorizontalAlignment="Left" Margin="43,64,0,0" VerticalAlignment="Top" Height="25" Width="73" Click="Maanantai_Click"/>
-        <Button x:Name="Keskiviikko" Content="Keskiviikko" HorizontalAlignment="Left" Margin="255,64,0,0" VerticalAlignment="Top" Height="25" Width="73"/>
-        <Button x:Name="Torstai" Content="Torstai" HorizontalAlignment="Left" Margin="347,64,0,0" VerticalAlignment="Top" Height="25" Width="72"/>
-        <Button x:Name="Perjantai" Content="Pejrtania" HorizontalAlignment="Left" Margin="459,64,0,0" VerticalAlignment="Top" Height="25" Width="73"/>
-        <Button x:Name="Tiistai" Content="Tiistai" HorizontalAlignment="Left" Margin="150,64,0,0" VerticalAlignment="Top" Height="25" Width="73"/>
-        <Button x:Name="Lauantai" Content="Lauantai" HorizontalAlignment="Left" Margin="552,64,0,0" VerticalAlignment="Top" Height="25" Width="73"/>
-        <Button x:Name="Sunnuntai" Content="Sunnuntai" HorizontalAlignment="Left" Margin="641,64,0,0" VerticalAlignment="Top" Height="25" Width="73" />
+        <Button x:Name="Keskiviikko" Content="Keskiviikko" HorizontalAlignment="Left" Margin="255,64,0,0" VerticalAlignment="Top" Height="25" Width="73" Click="Keskiviikko_Click"/>
+        <Button x:Name="Torstai" Content="Torstai" HorizontalAlignment="Left" Margin="347,64,0,0" VerticalAlignment="Top" Height="25" Width="72" Click="Torstai_Click"/>
+        <Button x:Name="Perjantai" Content="Pejrtania" HorizontalAlignment="Left" Margin="459,64,0,0" VerticalAlignment="Top" Height="25" Width="73" Click="Perjantai_Click"/>
+        <Button x:Name="Tiistai" Content="Tiistai" HorizontalAlignment="Left" Margin="150,64,0,0" VerticalAlignment="Top" Height="25" Width="73" Click="Tiistai_Click"/>
+        <Button x:Name="Lauantai" Content="Lauantai" HorizontalAlignment="Left" Margin="552,64,0,0" VerticalAlignment="Top" Height="25" Width="73" Click="Lauantai_Click"/>
+        <Button x:Name="Sunnuntai" Content="Sunnuntai" HorizontalAlignment="Left" Margin="641,64,0,0" VerticalAlignment="Top" Height="25" Width="73" Click="Sunnuntai_Click" />
 
     </Grid>
 

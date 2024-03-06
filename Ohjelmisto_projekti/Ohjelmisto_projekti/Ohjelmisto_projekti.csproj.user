@@ -13,10 +13,25 @@
     <Compile Update="Painonseuranta.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="TKe.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TLa.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="TMa.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="TPe.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Treenit.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TSu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TTo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -30,10 +45,25 @@
     <Page Update="Painonseuranta.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="TKe.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TLa.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="TMa.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="TPe.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Treenit.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TSu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TTo.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -1,11 +1,11 @@
-﻿<Window x:Class="Ohjelmisto_projekti.TTi"
+﻿<Window x:Class="Ohjelmisto_projekti.TPe"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ohjelmisto_projekti"
         mc:Ignorable="d"
-        Title="TMa" Height="450" Width="800">
+        Title="TPe" Height="450" Width="800">
     <Grid>
         <!-- Nappi joka lisää treenit liastnaa -->
         <Button x:Name="MaLisays" Content="Lisää treeniin liikkeitä" HorizontalAlignment="Left" Margin="64,63,0,0" VerticalAlignment="Top" Height="24" Width="136" Click="MaLisays_Click" IsDefault="True"/>

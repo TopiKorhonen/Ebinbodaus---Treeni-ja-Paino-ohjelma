@@ -87,5 +87,41 @@ namespace Ohjelmisto_projekti
             TMa myWindow = new();
             if (myWindow.ShowDialog() == true);
         }
+
+        private void Tiistai_Click(object sender, RoutedEventArgs e)
+        {
+            TTi myWindow = new();
+            if (myWindow.ShowDialog() == true) ;
+        }
+
+        private void Keskiviikko_Click(object sender, RoutedEventArgs e)
+        {
+            TKe myWindow = new();
+            if (myWindow.ShowDialog() == true) ;
+        }
+
+        private void Torstai_Click(object sender, RoutedEventArgs e)
+        {
+            TTo myWindow = new();
+            if (myWindow.ShowDialog() == true) ;
+        }
+
+        private void Perjantai_Click(object sender, RoutedEventArgs e)
+        {
+            TPe myWindow = new();
+            if (myWindow.ShowDialog() == true) ;
+        }
+
+        private void Lauantai_Click(object sender, RoutedEventArgs e)
+        {
+            TLa myWindow = new();
+            if (myWindow.ShowDialog() == true) ;
+        }
+
+        private void Sunnuntai_Click(object sender, RoutedEventArgs e)
+        {
+            TSu myWindow = new();
+            if (myWindow.ShowDialog() == true) ;
+        }
     }
 }

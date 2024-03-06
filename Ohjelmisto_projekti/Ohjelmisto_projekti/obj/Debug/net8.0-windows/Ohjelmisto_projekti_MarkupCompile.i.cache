@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 B:\Ohjelmointisekoilua\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\App.xaml
-6-1884431249
+11-553085181
 
-15-1469607591
+20-1574290002
 215-1382476589
-MainMenu.xaml;MainWindow.xaml;Painonseuranta.xaml;TMa.xaml;Treenit.xaml;TTi.xaml;
+MainMenu.xaml;MainWindow.xaml;Painonseuranta.xaml;TKe.xaml;TLa.xaml;TMa.xaml;TPe.xaml;Treenit.xaml;TSu.xaml;TTi.xaml;TTo.xaml;
 
-True
+False
 

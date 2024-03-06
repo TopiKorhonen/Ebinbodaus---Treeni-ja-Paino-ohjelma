@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows;
 using Ohjelmisto_projekti;
+
 namespace Ohjelmisto_projekti
 {
-    public partial class TMa : Window
+    public partial class TPe : Window
     {
-        public TMa()
+        public TPe()
         {
             InitializeComponent();
         }
