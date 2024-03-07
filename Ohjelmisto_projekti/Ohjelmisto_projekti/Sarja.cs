@@ -28,11 +28,11 @@ namespace Ohjelmisto_projekti
         public string Pituus { get; set; }
         public string Paino { get; set; }
 
-        public Sarja(string Liike, string Pituus, string Paino)
+        public Sarja(string liike, string pituus, string paino)
         {
-            this.Liike = Liike;
-            this.Pituus = Pituus;
-            this.Paino = Paino;
+            Liike = liike;
+            Pituus = pituus;
+            Paino = paino;
         }
     }
 }
