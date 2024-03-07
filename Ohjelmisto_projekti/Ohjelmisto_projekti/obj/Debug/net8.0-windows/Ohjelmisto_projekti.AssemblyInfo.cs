@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ohjelmisto_projekti")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+219973c6dc75dfe6086f72a005bda51a6599f99f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8539755e92bffcd76def8d0dbc3e7727ca2f7003")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ohjelmisto_projekti")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ohjelmisto_projekti")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

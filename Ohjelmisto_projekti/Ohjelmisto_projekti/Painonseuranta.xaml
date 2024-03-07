@@ -663,7 +663,7 @@
             <Calendar x:Name="calendar" HorizontalAlignment="Center" Height="307" VerticalAlignment="Center" Width="352" Style="{DynamicResource CalendarStyle1}" CalendarButtonStyle="{DynamicResource CalendarButtonStyle1}" CalendarDayButtonStyle="{DynamicResource CalendarDayButtonStyle1}" CalendarItemStyle="{DynamicResource CalendarItemStyle1}"/>
         </Viewbox>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="112,313,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.516,0.506" Height="239" Width="184" FontSize="16" Foreground="White"/>
-        <Grid>
+        <Grid Margin="-10,-9,10,10">
 
             <!--// taustan väri //-->
 
@@ -673,7 +673,7 @@
 
                 <!--// Ohjelman sulkemisnappula //-->
 
-                <Grid Margin="0,-26,-1,26" MouseDown="Window_MouseDown">
+                <Grid Margin="32,-10,-33,10" MouseDown="Window_MouseDown">
 
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>

@@ -1,4 +1,5 @@
-﻿using Ohjelmisto_projekti;
+﻿using Newtonsoft.Json;
+using Ohjelmisto_projekti;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.Eventing.Reader;
@@ -27,6 +28,28 @@ namespace Navigation_Drawer_App
         public MainWindow()
         {
             InitializeComponent();
+            string jsonFilePath = "data.json";
+            string jsonText = File.ReadAllText(jsonFilePath);
+            var data = JsonConvert.DeserializeObject<Dictionary<string, double>>(jsonText);
+
+            // Koita nyt tähän saada vikat 7pv jsonista
+            var last7Days = data
+                .OrderByDescending(kv => DateTime.Parse(kv.Key))
+                .Take(7)
+                .OrderBy(kv => DateTime.Parse(kv.Key))
+                .ToDictionary(kv => kv.Key, kv => kv.Value);
+
+            // viivadiagrammi?
+            WpfPlot1.Plot.Title("Weight Over Last 7 Days");
+            WpfPlot1.Plot.YLabel("Weight");
+            WpfPlot1.Plot.XLabel("Date");
+
+            // Se data siite plotinperkuleeseen
+            double[] painot = last7Days.Values.ToArray();
+            string[] paivat = last7Days.Keys.ToArray();
+
+            // Plot the data
+            WpfPlot1.Plot.Add.Scatter(paivat , painot);
         }
 
         public static MainWindow GetInstance()
