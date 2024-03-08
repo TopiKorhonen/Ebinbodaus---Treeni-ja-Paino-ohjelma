@@ -35,6 +35,26 @@ namespace Navigation_Drawer_App
             InitializeComponent();
             LoadDataFromJson();
             PlotData();
+            WpfPlot1.Plot.Axes.DateTimeTicksBottom();
+            
+            WpfPlot1.Plot.Axes.Bottom.MajorTickStyle.Length = 10;
+            WpfPlot1.Plot.Axes.Bottom.MajorTickStyle.Width = 1;
+            WpfPlot1.Plot.Style.Background(figure: ScottPlot.Color.FromHex("#242424"), data: ScottPlot.Color.FromHex("#242424"));
+            WpfPlot1.Plot.Style.ColorAxes(ScottPlot.Color.FromHex("#91276c"));
+            WpfPlot1.Plot.Style.ColorGrids(ScottPlot.Color.FromHex("#242424"));
+            
+            //Tällä vois ehkä saada x akselin tickit päiviksi
+            
+            //WpfPlot1.Plot.RenderManager.RenderStarting += (s, e) =>
+            //{
+            //    Tick[] ticks = WpfPlot1.Plot.Axes.Bottom.TickGenerator.Ticks;
+            //    for (int i = 0; i < ticks.Length; i++)
+            //    {
+            //        DateTime dt = DateTime.FromOADate(ticks[i].Position);
+            //        string label = $"{dt} '{dt:yy}";
+            //        ticks[i] = new Tick(ticks[i].Position, label);
+            //    }
+            //};
         }
         private void PlotData()
         {

@@ -162,7 +162,7 @@
 
             <!--// Taustakuva //-->
 
-            <Grid x:Name="BG" PreviewMouseLeftButtonDown="BG_PreviewMouseLeftButtonDown" Margin="-16,307,-96,-239" RenderTransformOrigin="0.5,0.5">
+            <Grid x:Name="BG" PreviewMouseLeftButtonDown="BG_PreviewMouseLeftButtonDown" Margin="-16,342,-96,-274" RenderTransformOrigin="0.5,0.5">
                 <Grid.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -213,7 +213,7 @@
                     </Button.Background>
 
                 </Button>
-                <WPF:WpfPlot x:Name="WpfPlot1" Margin="170,105,80,135" DisplayScale="1" IsEnabled="False" ScrollViewer.VerticalScrollBarVisibility="Disabled" Grid.Row="2" />
+                <WPF:WpfPlot x:Name="WpfPlot1" Margin="170,75,80,165" DisplayScale="1" IsEnabled="False" ScrollViewer.VerticalScrollBarVisibility="Disabled" Grid.Row="2" />
 
             </Grid>
 
