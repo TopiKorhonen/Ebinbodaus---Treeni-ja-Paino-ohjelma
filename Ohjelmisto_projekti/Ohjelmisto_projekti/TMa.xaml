@@ -5,22 +5,116 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ohjelmisto_projekti"
         mc:Ignorable="d"
-        Title="TMa" Height="450" Width="800">
-    <Grid>
+        Title="TMa" 
+        Height="600" 
+        Width="800"
+        ResizeMode="NoResize"
+        Topmost="True"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        MouseDown="Window_MouseDown">
+    <Window.Resources>
+        <!--// Ohjelman sulkeisnappulan template //-->
+
+        <ImageBrush x:Key="CloseBtn_MouseOver" ImageSource="/img_exit_Hiiri.png"/>
+
+
+        <Style x:Key="Close_btn" TargetType="{x:Type Button}">
+
+            <Setter Property="Template">
+
+                <Setter.Value>
+
+                    <ControlTemplate TargetType="{x:Type Button}">
+
+                        <Border x:Name="button"
+                      BorderThickness="0"
+                      Background="{TemplateBinding Background}"
+                      SnapsToDevicePixels="True">
+
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+
+                            <Trigger Property="IsMouseOver"
+                           Value="True">
+
+                                <Setter Property="Background"
+                              TargetName="button"
+                              Value="{StaticResource CloseBtn_MouseOver}"/>
+
+                            </Trigger>
+
+                        </ControlTemplate.Triggers>
+
+                    </ControlTemplate>
+
+                </Setter.Value>
+
+            </Setter>
+
+        </Style>
+    </Window.Resources>
+
+    <Grid  AllowDrop="True" MouseDown="Window_MouseDown" Background="#242424">
+
+        <Grid MouseDown="Window_MouseDown">
+
+            <!--// Ohjelman sulkemisnappula //-->
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="30"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Button x:Name="CloseBtn"
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        Height="40"
+                        Width="40"
+                        BorderThickness="0"
+                        Style="{StaticResource Close_btn}" Click="CloseBtn_Click">
+
+                <Button.Background>
+
+                    <ImageBrush ImageSource="/img_exit_default.png"/>
+
+                </Button.Background>
+
+            </Button>
+
+        </Grid>
+
+
+
         <!-- Nappi joka lisää treenit liastnaa -->
-        <Button x:Name="MaLisays" Content="Lisää treeniin liikkeitä" HorizontalAlignment="Left" Margin="64,63,0,0" VerticalAlignment="Top" Height="24" Width="136" Click="MaLisays_Click" IsDefault="True"/>
+        <Button x:Name="MaLisays" Content="Lisää treeniin liikkeitä" HorizontalAlignment="Left" Margin="64,63,0,0" VerticalAlignment="Top" Height="24" Width="136" Click="MaLisays_Click" IsDefault="True" Background="#FFB5FF66" FontSize="14">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
         <!--Treenien liikkeiden painon, itse liikkeen ja sarjan pituuden laatikot-->
         <TextBox x:Name="Liike1" HorizontalAlignment="Left" Margin="60,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180"/>
         <TextBox x:Name="Pituus1" HorizontalAlignment="Left" Margin="300,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180"/>
         <TextBox x:Name="Paino1" HorizontalAlignment="Left" Margin="540,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180"/>
-        <TextBlock HorizontalAlignment="Left" Margin="64,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="fi-fi" Text="Liike"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="300,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Sarjan pituus"/>
-        <TextBlock HorizontalAlignment="Left" Margin="540,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Paino"/>
+        <TextBlock HorizontalAlignment="Left" Margin="64,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FFB5FF66"><Run Language="fi-fi" Text="Liike"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="300,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Sarjan pituus" Foreground="#FFB5FF66"/>
+        <TextBlock HorizontalAlignment="Left" Margin="540,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Paino (Kg)" Foreground="#FFB5FF66"/>
         <!--Alue johon tulee treenit sekä treenien poisto nappulat, Se myös rajoittaa sen kuinka monta elementtiä menee vierekkäin ennenkuin se laittaa seuraavan alle-->
         <StackPanel x:Name="OmaLiike" Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="89,192,0,0">
-            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Height="212">
-                <WrapPanel x:Name="WrapPanelOmaLiike" Orientation="Horizontal"/>
+            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Height="212" Foreground="#FFB5FF66">
+                <WrapPanel x:Name="WrapPanelOmaLiike" Orientation="Horizontal" />
             </ScrollViewer>
         </StackPanel>
+
     </Grid>
 </Window>

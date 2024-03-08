@@ -8,6 +8,11 @@ using System.Windows;
 using Ohjelmisto_projekti;
 using Newtonsoft.Json;
 using System.IO;
+using Navigation_Drawer_App;
+using System.Windows.Input;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
+using Navigation_Drawer_App;
 
 namespace Ohjelmisto_projekti
 {
@@ -43,7 +48,24 @@ namespace Ohjelmisto_projekti
                 MessageBox.Show("Anna kenttiin oikeat arvot. Painoon max 3 numeroa. Pituuteen max 2 numeroa. Vain numeroita näihin kahteen kenttään ", "Virhe ilmoitus");
             }
         }
-
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+                this.DragMove();
+        }
+        private void CloseBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (this is MainWindow)
+            {
+                this.Close();
+            }
+            else
+            {
+                Treenit mainWindow = new Treenit();
+                mainWindow.Show();
+                this.Close();
+            }
+        }
         private bool IsValidInput(string liike, string pituus, string paino)
         {
             if (string.IsNullOrEmpty(liike))

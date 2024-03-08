@@ -27,19 +27,37 @@ namespace Ohjelmisto_projekti
         }
 
 
+        private void ListViewItem_MouseEnter(object sender, MouseEventArgs e)
+        {
+            // Set tooltip visibility
+
+            if (Tg_Btn.IsChecked == true)
+            {
+                tt_koti.Visibility = Visibility.Collapsed;
+                tt_treeni.Visibility = Visibility.Collapsed;
+                tt_paino.Visibility = Visibility.Collapsed;
+            }
+            else
+            {
+                tt_koti.Visibility = Visibility.Visible;
+                tt_treeni.Visibility = Visibility.Visible;
+                tt_paino.Visibility = Visibility.Visible;
+            }
+        }
+
         private void Tg_Btn_Unchecked(object sender, RoutedEventArgs e)
         {
-
+            img_bg.Opacity = 1;
         }
 
         private void Tg_Btn_Checked(object sender, RoutedEventArgs e)
         {
-
+            img_bg.Opacity = 0.3;
         }
 
         private void BG_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-
+            Tg_Btn.IsChecked = false;
         }
 
         private void Paaruutu_Click(object sender, RoutedEventArgs e)
@@ -65,14 +83,14 @@ namespace Ohjelmisto_projekti
 
         private void Treenit_Click(object sender, RoutedEventArgs e)
         {
-            Treenit newWin = new Treenit();
-            newWin.Show();
+            Treenit secondWin = new Treenit();
+            secondWin.Show();
             this.Close();
         }
         private void PainoOsio_Click(object sender, RoutedEventArgs e)
         {
-            Painonseuranta newWin = new Painonseuranta();
-            newWin.Show();
+            Painonseuranta secondWin = new Painonseuranta();
+            secondWin.Show();
             this.Close();
         }
 
@@ -84,44 +102,99 @@ namespace Ohjelmisto_projekti
 
         private void Maanantai_Click(object sender, RoutedEventArgs e)
         {
-            TMa myWindow = new();
-            if (myWindow.ShowDialog() == true);
+            if (this is MainWindow)
+            {
+                this.Close();
+            }
+            else
+            {
+                TMa mainWindow = new TMa();
+                mainWindow.Show();
+                this.Close();
+            }
+        }
+        private void Perjantai_Click_1(object sender, RoutedEventArgs e)
+        {
+            if (this is MainWindow)
+            {
+                this.Close();
+            }
+            else
+            {
+                TPe mainWindow = new TPe();
+                mainWindow.Show();
+                this.Close();
+            }
         }
 
-        private void Tiistai_Click(object sender, RoutedEventArgs e)
+        private void Tiistai_Click_1(object sender, RoutedEventArgs e)
         {
-            TTi myWindow = new();
-            if (myWindow.ShowDialog() == true) ;
+            if (this is MainWindow)
+            {
+                this.Close();
+            }
+            else
+            {
+                TTo mainWindow = new TTo();
+                mainWindow.Show();
+                this.Close();
+            }
         }
 
-        private void Keskiviikko_Click(object sender, RoutedEventArgs e)
+        private void Lauantai_Click_1(object sender, RoutedEventArgs e)
         {
-            TKe myWindow = new();
-            if (myWindow.ShowDialog() == true) ;
+            if (this is MainWindow)
+            {
+                this.Close();
+            }
+            else
+            {
+                TLa mainWindow = new TLa();
+                mainWindow.Show();
+                this.Close();
+            }
         }
 
-        private void Torstai_Click(object sender, RoutedEventArgs e)
+        private void Sunnuntai_Click_1(object sender, RoutedEventArgs e)
         {
-            TTo myWindow = new();
-            if (myWindow.ShowDialog() == true) ;
+            if (this is MainWindow)
+            {
+                this.Close();
+            }
+            else
+            {
+                TSu mainWindow = new TSu();
+                mainWindow.Show();
+                this.Close();
+            }
         }
 
-        private void Perjantai_Click(object sender, RoutedEventArgs e)
+        private void Torstai_Click_1(object sender, RoutedEventArgs e)
         {
-            TPe myWindow = new();
-            if (myWindow.ShowDialog() == true) ;
+            if (this is MainWindow)
+            {
+                this.Close();
+            }
+            else
+            {
+                TTo mainWindow = new TTo();
+                mainWindow.Show();
+                this.Close();
+            }
         }
 
-        private void Lauantai_Click(object sender, RoutedEventArgs e)
+        private void Keskiviikko_Click_1(object sender, RoutedEventArgs e)
         {
-            TLa myWindow = new();
-            if (myWindow.ShowDialog() == true) ;
-        }
-
-        private void Sunnuntai_Click(object sender, RoutedEventArgs e)
-        {
-            TSu myWindow = new();
-            if (myWindow.ShowDialog() == true) ;
+            if (this is MainWindow)
+            {
+                this.Close();
+            }
+            else
+            {
+                TKe mainWindow = new TKe();
+                mainWindow.Show();
+                this.Close();
+            }
         }
     }
 }
