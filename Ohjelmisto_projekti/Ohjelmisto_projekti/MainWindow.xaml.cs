@@ -15,6 +15,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
+using ScottPlot;
 
 namespace Navigation_Drawer_App
 {
@@ -23,33 +25,88 @@ namespace Navigation_Drawer_App
     /// </summary>
     public partial class MainWindow : Window
     {
+        private List<Painoni> PainoLista = new List<Painoni>();
+        private List<PaivaLista> PaivaList = new List<PaivaLista>();
+
         private static MainWindow instance;
 
         public MainWindow()
         {
             InitializeComponent();
-            string jsonFilePath = "data.json";
-            string jsonText = File.ReadAllText(jsonFilePath);
-            var data = JsonConvert.DeserializeObject<Dictionary<string, double>>(jsonText);
+            LoadDataFromJson();
+            PlotData();
+        }
+        private void PlotData()
+        {
+            // Valitaan vain viimeiset 7 päivää sisältävät merkinnät
+            var last7DaysEntries = PaivaList
+                .Where(entry => (DateTime.Now - entry.date).TotalDays < 7)
+                .OrderByDescending(entry => entry.date)
+                .ToList();
 
-            // Koita nyt tähän saada vikat 7pv jsonista
-            var last7Days = data
-                .OrderByDescending(kv => DateTime.Parse(kv.Key))
-                .Take(7)
-                .OrderBy(kv => DateTime.Parse(kv.Key))
-                .ToDictionary(kv => kv.Key, kv => kv.Value);
+            // Rajataan merkinnät maksimissaan 7 päivään
+            if (last7DaysEntries.Count > 7)
+                last7DaysEntries = last7DaysEntries.Take(7).ToList();
 
-            // viivadiagrammi?
-            WpfPlot1.Plot.Title("Weight Over Last 7 Days");
-            WpfPlot1.Plot.YLabel("Weight");
-            WpfPlot1.Plot.XLabel("Date");
+            // Järjestetään merkinnät päivämäärän mukaan
+            var sortedEntries = last7DaysEntries.Zip(PainoLista, (dateEntry, weightEntry) => new { DateEntry = dateEntry, WeightEntry = weightEntry })
+                .OrderBy(entry => entry.DateEntry.date)
+                .ToList();
 
-            // Se data siite plotinperkuleeseen
-            double[] painot = last7Days.Values.ToArray();
-            string[] paivat = last7Days.Keys.ToArray();
+            // Valmistellaan data kaavion piirtämistä varten
+            var sortedWeights = sortedEntries.Select(entry => entry.WeightEntry.paino).ToArray();
+            var sortedDates = sortedEntries.Select(entry => entry.DateEntry.date).ToArray();
 
-            // Plot the data
-            WpfPlot1.Plot.Add.Scatter(paivat , painot);
+            // Tyhjennetään nykyinen kaavio ennen uuden datan lisäämistä
+            WpfPlot1.Plot.Clear();
+
+            // Lisätään kaavioon pistekaavio (scatter plot) järjestetyillä päivämäärillä ja painoilla
+            var scatter = WpfPlot1.Plot.Add.Scatter(sortedDates, sortedWeights);
+            scatter.Color = ScottPlot.Color.FromHex("#b5ff66");
+            scatter.LineWidth = 5;
+            scatter.MarkerSize = 13;
+
+            // Asetetaan kaaviolle päivämäärätickien muotoilu
+            WpfPlot1.Plot.RenderManager.RenderStarting += (s, e) =>
+            {
+                Tick[] ticks = WpfPlot1.Plot.Axes.Bottom.TickGenerator.Ticks;
+                for (int i = 0; i < ticks.Length; i++)
+                {
+                    DateTime dt = DateTime.FromOADate(ticks[i].Position);
+                    string label = $"{dt:dd/MM/yyyy}";
+                    ticks[i] = new Tick(ticks[i].Position, label);
+                }
+            };
+
+            // Automaattinen skaalaus akselille
+            WpfPlot1.Plot.Axes.AutoScale();
+            // Päivitetään kaavio näyttämään uusi data
+            WpfPlot1.Refresh();
+        }
+        private void LoadDataFromJson()
+        {
+            string filePath = "data.json";
+            if (File.Exists(filePath))
+            {
+                string json = File.ReadAllText(filePath);
+                var jsonData = JsonConvert.DeserializeObject<dynamic>(json);
+
+                double[] dates = jsonData.Dates.ToObject<double[]>();
+                double[] weights = jsonData.Weights.ToObject<double[]>();
+
+                PaivaList.Clear();
+                PainoLista.Clear();
+
+                for (int i = 0; i < dates.Length; i++)
+                {
+                    PaivaList.Add(new PaivaLista(DateTime.FromOADate(dates[i])));
+                    PainoLista.Add(new Painoni(weights[i]));
+                }
+            }
+            else
+            {
+                MessageBox.Show("Data file not found.");
+            }
         }
 
         public static MainWindow GetInstance()

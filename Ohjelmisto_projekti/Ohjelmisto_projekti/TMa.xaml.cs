@@ -39,6 +39,7 @@ namespace Ohjelmisto_projekti
                 MessageBox.Show("SarjaList contents:\n" + string.Join("\n", SarjaList.Select(s => $"{s.Liike} - {s.Pituus} Toistoa - {s.Paino} KG"))); //testataan että jsoni saa oikeat tiedot, ns backup versio että nähdään että jsoni toimii
 
                 SaveDataToJson(); //Tallentaa kyseiset Liikken, painot, ja toistojen määrät jsooniin.
+               
             }
             else
             {
@@ -85,43 +86,43 @@ namespace Ohjelmisto_projekti
                 WrapPanelOmaLiike.Children.Add(stackPanel);
             }
         }
-         private void SaveDataToJson() //Jsonin tallennus methodi, muuttaa Sarjalistan Jsoniin sopivaksi. jonka jälkeen tallentaa data2 jsoniin.
-        {
-            string json = JsonConvert.SerializeObject(SarjaList, Formatting.Indented);
-
-            string filePath = "data2.json";
-            File.WriteAllText(filePath, json);
-
-        }
-
-        private void LoadDataFromJson() //Hakee "vanhat" tiedot jsonista. 
-        {
-            string filePath = "data2.json";
-            if (File.Exists(filePath))
+             private void SaveDataToJson() //Jsonin tallennus methodi, muuttaa Sarjalistan Jsoniin sopivaksi. jonka jälkeen tallentaa data2 jsoniin.
             {
-                string json = File.ReadAllText(filePath);
-                SarjaList = JsonConvert.DeserializeObject<List<Sarja>>(json);
-            }
-            else
-            {
-                MessageBox.Show("Data file not found.");
-            }
-        }
-        private void UpdateUI() //Methodi joka antaa näyttää "vanhat" tiedot jsonista. Jonka ansioista henkilö voi seurata paljonko on tehnyt jo toistoja
-        {
-            WrapPanelOmaLiike.Children.Clear(); // Clear existing items before adding new ones
+                string json = JsonConvert.SerializeObject(SarjaList, Formatting.Indented);
 
-            foreach (var sarja in SarjaList)
-            {
-                // Create a TextBlock to display the Sarja data
-                TextBlock textBlock = new TextBlock();
-                textBlock.Text = $"{sarja.Liike} - {sarja.Pituus} Toistoa - {sarja.Paino} KG";
-                textBlock.FontSize = 14;
+                string filePath = "data2.json";
+                File.WriteAllText(filePath, json);
 
-                // Add the TextBlock to the WrapPanelOmaLiike
-                WrapPanelOmaLiike.Children.Add(textBlock);
             }
-        }
+
+            private void LoadDataFromJson() //Hakee "vanhat" tiedot jsonista. 
+            {
+                string filePath = "data2.json";
+                if (File.Exists(filePath))
+                {
+                    string json = File.ReadAllText(filePath);
+                    SarjaList = JsonConvert.DeserializeObject<List<Sarja>>(json);
+                }
+                else
+                {
+                    MessageBox.Show("Data file not found.");
+                }
+            }
+            private void UpdateUI() //Methodi joka antaa näyttää "vanhat" tiedot jsonista. Jonka ansioista henkilö voi seurata paljonko on tehnyt jo toistoja
+            {
+                WrapPanelOmaLiike.Children.Clear(); // Clear existing items before adding new ones
+
+                foreach (var sarja in SarjaList)
+                {
+                    // Create a TextBlock to display the Sarja data
+                    TextBlock textBlock = new TextBlock();
+                    textBlock.Text = $"{sarja.Liike} - {sarja.Pituus} Toistoa - {sarja.Paino} KG";
+                    textBlock.FontSize = 14;
+
+                    // Add the TextBlock to the WrapPanelOmaLiike
+                    WrapPanelOmaLiike.Children.Add(textBlock);
+                }
+            }
 
     }
 }
