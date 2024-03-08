@@ -49,7 +49,7 @@ namespace Navigation_Drawer_App
             // Valitaan vain viimeiset 7 päivää sisältävät merkinnät
             var last7DaysEntries = PaivaList
                 .Where(entry => (DateTime.Now - entry.date).TotalDays < 7)
-                .OrderByDescending(entry => entry.date)
+                .OrderBy(entry => entry.date)
                 .ToList();
 
             // Rajataan merkinnät maksimissaan 7 päivään
