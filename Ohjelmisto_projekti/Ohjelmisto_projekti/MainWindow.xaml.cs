@@ -41,6 +41,11 @@ namespace Navigation_Drawer_App
             WpfPlot1.Plot.Style.Background(figure: ScottPlot.Color.FromHex("#242424"), data: ScottPlot.Color.FromHex("#242424"));
             WpfPlot1.Plot.Style.ColorAxes(ScottPlot.Color.FromHex("#91276c"));
             WpfPlot1.Plot.Style.ColorGrids(ScottPlot.Color.FromHex("#242424"));
+            WpfPlot1.Plot.Axes.Title.Label.Text = "Viimeiset 7 päivää";
+            WpfPlot1.Plot.Axes.Title.Label.FontSize = 25;
+
+            WpfPlot1.Plot.Axes.Left.Label.Text = "Paino (Kg)";
+            WpfPlot1.Plot.Axes.Left.Label.Italic = true;
             PlotData();
 
 
@@ -75,7 +80,7 @@ namespace Navigation_Drawer_App
                 for (int i = 0; i < ticks.Length; i++)
                 {
                     DateTime dt = DateTime.FromOADate(ticks[i].Position);
-                    string label = $"{dt:dd/MM/yyyy}";
+                    string label = $"{dt:dd/MM}";
                     ticks[i] = new Tick(ticks[i].Position, label);
                 }
             };

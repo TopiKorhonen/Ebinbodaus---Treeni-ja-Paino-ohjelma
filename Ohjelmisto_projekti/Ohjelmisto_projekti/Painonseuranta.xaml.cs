@@ -42,6 +42,8 @@ namespace Ohjelmisto_projekti
             WpfPlot1.Plot.Style.Background(figure: ScottPlot.Color.FromHex("#242424"), data: ScottPlot.Color.FromHex("#242424"));
             WpfPlot1.Plot.Style.ColorAxes(ScottPlot.Color.FromHex("#91276c"));
             WpfPlot1.Plot.Style.ColorGrids(ScottPlot.Color.FromHex("#242424"));
+            WpfPlot1.Plot.Axes.Left.Label.Text = "Paino (Kg)";
+            WpfPlot1.Plot.Axes.Left.Label.Italic = true;
 
             LoadDataFromJson(); //Hakee tiedot json filestä
 
