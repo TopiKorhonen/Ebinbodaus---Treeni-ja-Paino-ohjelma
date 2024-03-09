@@ -221,7 +221,7 @@ namespace Ohjelmisto_projekti {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Ohjelmisto_projekti;V1.0.0.0;component/treenit.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Ohjelmisto_projekti;component/treenit.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Treenit.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

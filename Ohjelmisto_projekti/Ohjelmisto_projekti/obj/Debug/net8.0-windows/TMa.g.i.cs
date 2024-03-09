@@ -109,7 +109,7 @@ namespace Ohjelmisto_projekti {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Ohjelmisto_projekti;V1.0.0.0;component/tma.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Ohjelmisto_projekti;component/tma.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\TMa.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
