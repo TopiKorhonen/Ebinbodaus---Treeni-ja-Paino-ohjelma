@@ -95,7 +95,7 @@
 
 
         <!-- Nappi joka lisää treenit liastnaa -->
-        <Button x:Name="MaLisays" Content="Lisää treeniin liikkeitä" HorizontalAlignment="Left" Margin="64,63,0,0" VerticalAlignment="Top" Height="24" Width="136" Click="MaLisays_Click" IsDefault="True" Background="#FFFF00A6" FontSize="14" Foreground="White">
+        <Button x:Name="MaLisays" Content="Lisää treeniin liikkeitä" HorizontalAlignment="Left" Margin="64,63,0,0" VerticalAlignment="Top" Height="24" Width="136" Click="MaLisays_Click" IsDefault="True" Background="#FF91276C" FontSize="14" Foreground="White">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="10"/>

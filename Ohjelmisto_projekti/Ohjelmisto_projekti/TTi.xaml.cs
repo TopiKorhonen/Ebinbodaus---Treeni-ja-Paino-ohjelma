@@ -17,7 +17,7 @@ namespace Ohjelmisto_projekti
 {
     public partial class TTi : Window
     {
-        private List<Sarja> SarjaListTi = new List<Sarja>();
+        private List<Sarja> SarjaListTi = new List<Sarja>();//osa kommentoinnista vain torstain cs tiedostossa kun sama toistuu jokaisella päivällä
         public TTi()
         {
             InitializeComponent();
@@ -79,13 +79,6 @@ namespace Ohjelmisto_projekti
             return true;
         }
 
-        private void PoistaTreeni_Click(object sender, RoutedEventArgs e)
-        {
-            Button button = (Button)sender;
-            int index = (int)button.Tag;
-            SarjaStorage.PoistaSarja(index);
-            Paivittaja();
-        }
 
         private void Paivittaja()
         {

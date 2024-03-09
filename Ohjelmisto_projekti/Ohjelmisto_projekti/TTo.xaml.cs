@@ -67,6 +67,7 @@ namespace Ohjelmisto_projekti
                 this.Close();
             }
         }
+        // Tarkistaa että on annettu oikeat arvot kaikkiin
         private bool IsValidInput(string liike, string pituus, string paino)
         {
             if (string.IsNullOrEmpty(liike))
@@ -78,27 +79,22 @@ namespace Ohjelmisto_projekti
 
             return true;
         }
-
-        private void PoistaTreeni_Click(object sender, RoutedEventArgs e)
-        {
-            Button button = (Button)sender;
-            int index = (int)button.Tag;
-            SarjaStorage.PoistaSarja(index);
-            Paivittaja();
-        }
-
+        // Päivittää näkymää
         private void Paivittaja()
         {
             WrapPanelOmaLiike.Children.Clear();
             for (int i = 0; i < SarjaListTo.Count; i++)
             {
+                // Luodaan StackPaneliin treeni
                 Sarja sarja = SarjaListTo[i];
                 StackPanel stackPanel = new StackPanel { Orientation = Orientation.Horizontal, Margin = new Thickness(0, 5, 0, 5) };
                 TextBlock textBlock = new TextBlock { Text = $"{sarja.Liike} - {sarja.Pituus} Toistoa - {sarja.Paino} KG", FontSize = 14 };
+                // Luodaan poistanappi jokaiselle treenille
                 Button button = new Button { Content = "X", Tag = i, Margin = new Thickness(5, 0, 0, 0), };
                 button.Click += PoistaSarja_Click; // Lisätään PoistaSarja_Click suoraan tähän
                 stackPanel.Children.Add(textBlock);
                 stackPanel.Children.Add(button);
+                //Muokattiin hieman napin ulkonäköä 
                 button.Background = System.Windows.Media.Brushes.Transparent;
                 button.BorderBrush = null;
                 button.Foreground = System.Windows.Media.Brushes.Red;
@@ -130,7 +126,7 @@ namespace Ohjelmisto_projekti
             }
         }
         private void PoistaSarja_Click(object sender, RoutedEventArgs e)
-        {
+        {        // Treenin  poisto nappi
             Button button = (Button)sender;
             int index = (int)button.Tag;
 
