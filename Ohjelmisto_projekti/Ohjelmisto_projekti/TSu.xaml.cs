@@ -105,9 +105,9 @@ namespace Ohjelmisto_projekti
                 button.Background = System.Windows.Media.Brushes.Transparent;
                 button.BorderBrush = null;
                 button.Foreground = System.Windows.Media.Brushes.Red;
-                WrapPanelOmaLiike.Children.Add(stackPanel);       
+                WrapPanelOmaLiike.Children.Add(stackPanel);
             }
-        
+
         }
         private void SaveDataToJson() //Jsonin tallennus methodi, muuttaa Sarjalistan Jsoniin sopivaksi. jonka jälkeen tallentaa data2 jsoniin.
         {

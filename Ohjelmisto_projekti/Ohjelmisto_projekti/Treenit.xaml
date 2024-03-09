@@ -521,28 +521,28 @@
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button x:Name="Keskiviikko" Content="Keskiviikko" HorizontalAlignment="Left" Margin="256,242,0,0" VerticalAlignment="Top" Height="26" Width="73" Click="Keskiviikko_Click_1">
+            <Button x:Name="Keskiviikko" Content="Keskiviikko" HorizontalAlignment="Left" Margin="257,180,0,0" VerticalAlignment="Top" Height="26" Width="73" Click="Keskiviikko_Click_1">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="10"/>
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button x:Name="Torstai" Content="Torstai" HorizontalAlignment="Left" Margin="257,312,0,0" VerticalAlignment="Top" Height="24" Width="72" Click="Torstai_Click_1">
+            <Button x:Name="Torstai" Content="Torstai" HorizontalAlignment="Left" Margin="257,230,0,0" VerticalAlignment="Top" Height="24" Width="72" Click="Torstai_Click_1">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="10"/>
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button x:Name="Perjantai" Content="Pejrtania" HorizontalAlignment="Left" Margin="256,106,0,0" VerticalAlignment="Top" Height="25" Width="73" Click="Perjantai_Click_1">
+            <Button x:Name="Perjantai" Content="Perjantai" HorizontalAlignment="Left" Margin="257,283,0,0" VerticalAlignment="Top" Height="25" Width="73" Click="Perjantai_Click_1">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="10"/>
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button x:Name="Tiistai" Content="Tiistai" HorizontalAlignment="Left" Margin="256,178,0,0" VerticalAlignment="Top" Height="25" Width="73" Click="Tiistai_Click_1">
+            <Button x:Name="Tiistai" Content="Tiistai" HorizontalAlignment="Left" Margin="257,125,0,0" VerticalAlignment="Top" Height="25" Width="73" Click="Tiistai_Click_1">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="10"/>
