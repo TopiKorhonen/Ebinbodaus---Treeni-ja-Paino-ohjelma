@@ -34,7 +34,6 @@ namespace Navigation_Drawer_App
         {
             InitializeComponent();
             LoadDataFromJson();
-            PlotData();
             WpfPlot1.Plot.Axes.DateTimeTicksBottom();
             WpfPlot1.Plot.Axes.SetLimits(1, 7, 60, 100);
             WpfPlot1.Plot.Axes.Bottom.MajorTickStyle.Length = 10;
@@ -42,28 +41,23 @@ namespace Navigation_Drawer_App
             WpfPlot1.Plot.Style.Background(figure: ScottPlot.Color.FromHex("#242424"), data: ScottPlot.Color.FromHex("#242424"));
             WpfPlot1.Plot.Style.ColorAxes(ScottPlot.Color.FromHex("#91276c"));
             WpfPlot1.Plot.Style.ColorGrids(ScottPlot.Color.FromHex("#242424"));
-            
+            PlotData();
+
+
         }
         private void PlotData()
         {
-            // Valitaan vain viimeiset 7 päivää sisältävät merkinnät
-            var last7DaysEntries = PaivaList
-                .Where(entry => (DateTime.Now - entry.date).TotalDays < 7)
-                .OrderBy(entry => entry.date)
-                .ToList();
-
-            // Rajataan merkinnät maksimissaan 7 päivään
-            if (last7DaysEntries.Count > 7)
-                last7DaysEntries = last7DaysEntries.Take(7).ToList();
-
             // Järjestetään merkinnät päivämäärän mukaan
-            var sortedEntries = last7DaysEntries.Zip(PainoLista, (dateEntry, weightEntry) => new { DateEntry = dateEntry, WeightEntry = weightEntry })
+            var sortedEntries = PaivaList.Zip(PainoLista, (dateEntry, weightEntry) => new { DateEntry = dateEntry, WeightEntry = weightEntry })
                 .OrderBy(entry => entry.DateEntry.date)
                 .ToList();
 
+            // Valitaan vain viimeiset 7 päivää sisältävät merkinnät
+            var lastSevenEntries = sortedEntries.Skip(Math.Max(0, sortedEntries.Count - 7));
+
             // Valmistellaan data kaavion piirtämistä varten
-            var sortedWeights = sortedEntries.Select(entry => entry.WeightEntry.paino).ToArray();
-            var sortedDates = sortedEntries.Select(entry => entry.DateEntry.date).ToArray();
+            var sortedWeights = lastSevenEntries.Select(entry => entry.WeightEntry.paino).ToArray();
+            var sortedDates = lastSevenEntries.Select(entry => entry.DateEntry.date).ToArray();
 
             // Tyhjennetään nykyinen kaavio ennen uuden datan lisäämistä
             WpfPlot1.Plot.Clear();

@@ -254,3 +254,15 @@ C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---
 C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.pdb
 C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\Ohjelmisto_projekti.genruntimeconfig.cache
 C:\Users\John\OneDrive - Hämeen ammattikorkeakoulu\ohjelmointi\C#\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\ref\Ohjelmisto_projekti.dll
+O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\TKe.g.cs
+O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\TLa.g.cs
+O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\TPe.g.cs
+O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\TSu.g.cs
+O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\TTi.g.cs
+O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\TTo.g.cs
+O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\TKe.baml
+O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\TLa.baml
+O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\TPe.baml
+O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\TSu.baml
+O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\TTi.baml
+O:\sources\Repos\Ebinbodaus---Treeni-ja-Paino-ohjelma\Ohjelmisto_projekti\Ohjelmisto_projekti\obj\Debug\net8.0-windows\TTo.baml

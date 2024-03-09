@@ -213,7 +213,7 @@
                     </Button.Background>
 
                 </Button>
-                <WPF:WpfPlot x:Name="WpfPlot1" Margin="170,75,80,165" DisplayScale="1" IsEnabled="False" ScrollViewer.VerticalScrollBarVisibility="Disabled" Grid.Row="2" />
+                <WPF:WpfPlot x:Name="WpfPlot1" Margin="170,75,80,165" DisplayScale="1" ScrollViewer.VerticalScrollBarVisibility="Disabled" Grid.Row="2" IsEnabled="False" />
 
             </Grid>
 
