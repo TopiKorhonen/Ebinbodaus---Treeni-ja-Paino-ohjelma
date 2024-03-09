@@ -17,7 +17,7 @@ namespace Ohjelmisto_projekti
 {
     public partial class TMa : Window
     {
-        private List<Sarja> SarjaList = new List<Sarja>();
+        private List<Sarja> SarjaList = new List<Sarja>();//osa kommentoinnista vain torstain cs tiedostossa kun sama toistuu jokaisella päivällä
         public TMa()
         {
             InitializeComponent();

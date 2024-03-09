@@ -135,7 +135,7 @@ namespace Ohjelmisto_projekti
             }
             else
             {
-                TTo mainWindow = new TTo();
+                TTi mainWindow = new TTi();
                 mainWindow.Show();
                 this.Close();
             }

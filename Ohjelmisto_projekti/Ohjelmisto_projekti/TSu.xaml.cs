@@ -17,7 +17,7 @@ namespace Ohjelmisto_projekti
 {
     public partial class TSu : Window
     {
-        private List<Sarja> SarjaListSu = new List<Sarja>();
+        private List<Sarja> SarjaListSu = new List<Sarja>();//osa kommentoinnista vain torstain cs tiedostossa kun sama toistuu jokaisella päivällä
         public TSu()
         {
             InitializeComponent();
@@ -78,16 +78,6 @@ namespace Ohjelmisto_projekti
                 mainWindow.Show();
                 this.Close();
             }
-        }
-        private void PoistaTreeni_Click(object sender, RoutedEventArgs e)
-        {
-            Button button = (Button)sender;
-            int index = (int)button.Tag;
-            SarjaListSu.RemoveAt(index);
-            SaveDataToJson();
-            UpdateUI();
-            Paivittaja();
-           
         }
 
         private void Paivittaja()

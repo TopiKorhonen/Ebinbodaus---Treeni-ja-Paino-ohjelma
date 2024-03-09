@@ -15,7 +15,7 @@ using System.Windows.Input;
 
 namespace Ohjelmisto_projekti
 {
-    public partial class TKe : Window
+    public partial class TKe : Window //osa kommentoinnista vain torstain cs tiedostossa kun sama toistuu jokaisella päivällä
     {
         private List<Sarja> SarjaListKe = new List<Sarja>();
         public TKe()
@@ -77,14 +77,6 @@ namespace Ohjelmisto_projekti
                 return false;
 
             return true;
-        }
-
-        private void PoistaTreeni_Click(object sender, RoutedEventArgs e)
-        {
-            Button button = (Button)sender;
-            int index = (int)button.Tag;
-            SarjaStorage.PoistaSarja(index);
-            Paivittaja();
         }
 
         private void Paivittaja()

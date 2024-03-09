@@ -514,49 +514,49 @@
 
 
         <Grid x:Name="Piilo">
-            <Button x:Name="Maanantai" Content="Maanantai" HorizontalAlignment="Left" Margin="234,64,0,0" VerticalAlignment="Top" Height="88" Width="157" Click="Maanantai_Click" Background="#FFFF00A6" Foreground="White">
+            <Button x:Name="Maanantai" Content="Maanantai" HorizontalAlignment="Left" Margin="234,64,0,0" VerticalAlignment="Top" Height="88" Width="157" Click="Maanantai_Click" Background="#FF91276C" Foreground="White">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="10"/>
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button x:Name="Keskiviikko" Content="Keskiviikko" HorizontalAlignment="Left" Margin="558,64,0,0" VerticalAlignment="Top" Height="88" Width="157" Click="Keskiviikko_Click_1" Background="#FFFF00A6" Foreground="White">
+            <Button x:Name="Keskiviikko" Content="Keskiviikko" HorizontalAlignment="Left" Margin="558,64,0,0" VerticalAlignment="Top" Height="88" Width="157" Click="Keskiviikko_Click_1" Background="#FF91276C" Foreground="White">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="10"/>
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button x:Name="Torstai" Content="Torstai" HorizontalAlignment="Left" Margin="234,207,0,0" VerticalAlignment="Top" Height="88" Width="157" Click="Torstai_Click_1" Background="#FFFF00A6" Foreground="White">
+            <Button x:Name="Torstai" Content="Torstai" HorizontalAlignment="Left" Margin="234,207,0,0" VerticalAlignment="Top" Height="88" Width="157" Click="Torstai_Click_1" Background="#FF91276C" Foreground="White">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="10"/>
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button x:Name="Perjantai" Content="Perjantai" HorizontalAlignment="Left" Margin="396,207,0,0" VerticalAlignment="Top" Height="88" Width="157" Click="Perjantai_Click_1" Background="#FFFF00A6" Foreground="White">
+            <Button x:Name="Perjantai" Content="Perjantai" HorizontalAlignment="Left" Margin="396,207,0,0" VerticalAlignment="Top" Height="88" Width="157" Click="Perjantai_Click_1" Background="#FF91276C" Foreground="White">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="10"/>
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button x:Name="Tiistai" Content="Tiistai" HorizontalAlignment="Left" Margin="396,64,0,0" VerticalAlignment="Top" Height="88" Width="157" Click="Tiistai_Click_1" Background="#FFFF00A6" Foreground="White" >
+            <Button x:Name="Tiistai" Content="Tiistai" HorizontalAlignment="Left" Margin="396,64,0,0" VerticalAlignment="Top" Height="88" Width="157" Click="Tiistai_Click_1" Background="#FF91276C" Foreground="White" >
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="10"/>
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button x:Name="Lauantai" Content="Lauantai" HorizontalAlignment="Left" Margin="558,207,0,0" VerticalAlignment="Top" Height="88" Width="158" Click="Lauantai_Click_1" Background="#FFFF00A6" Foreground="White">
+            <Button x:Name="Lauantai" Content="Lauantai" HorizontalAlignment="Left" Margin="558,207,0,0" VerticalAlignment="Top" Height="88" Width="158" Click="Lauantai_Click_1" Background="#FF91276C" Foreground="White">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="10"/>
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button x:Name="Sunnuntai" Content="Sunnuntai" HorizontalAlignment="Left" Margin="396,335,0,0" VerticalAlignment="Top" Height="88" Width="157" Click="Sunnuntai_Click_1" Background="#FFFF00A6" Foreground="White">
+            <Button x:Name="Sunnuntai" Content="Sunnuntai" HorizontalAlignment="Left" Margin="396,335,0,0" VerticalAlignment="Top" Height="88" Width="157" Click="Sunnuntai_Click_1" Background="#FF91276C" Foreground="White">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="10"/>
