@@ -216,7 +216,15 @@
                 <WPF:WpfPlot x:Name="WpfPlot1" Margin="170,75,80,165" DisplayScale="1" ScrollViewer.VerticalScrollBarVisibility="Disabled" Grid.Row="2" IsEnabled="False" />
 
             </Grid>
-
+            <TextBlock
+             Grid.Column="0"
+             Margin="280,30,0,0"
+             Text=" E B I N   B O D A U S "
+             Foreground="#b5ff66"
+             FontSize="22"
+             Background="Transparent"
+             VerticalAlignment="Top"
+             Style="{StaticResource font_style}"/>
 
             <!--// Navigation Panel //-->
 
@@ -258,6 +266,7 @@
                         </TextBlock>
 
                         <!--// Toggle Button //-->
+
 
                         <ToggleButton x:Name="Tg_Btn"
                                       Grid.Column="0"
@@ -336,6 +345,7 @@
                                Background="Transparent"
                                BorderBrush="Transparent"
                                ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+
 
                         <!--// Listview itemien tyyli  //-->
 
