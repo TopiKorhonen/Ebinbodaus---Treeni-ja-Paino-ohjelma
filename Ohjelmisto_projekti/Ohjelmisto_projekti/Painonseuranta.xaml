@@ -246,7 +246,7 @@
                                     </VisualState>
                                 </VisualStateGroup>
                             </VisualStateManager.VisualStateGroups>
-                            <Rectangle x:Name="TodayBackground" Fill="#91276c" Opacity="0" RadiusY="15" RadiusX="15" Width="47" Height="30"/>
+                            <Rectangle x:Name="TodayBackground" Fill="#FFFF00A6" Opacity="0" RadiusY="15" RadiusX="15" Width="47" Height="30"/>
                             <Rectangle x:Name="SelectedBackground" Fill="#b5ff66" Opacity="0" RadiusY="15" RadiusX="15"/>
                             <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}"/>
                             <Rectangle x:Name="HighlightBackground" Fill="#b5ff66" Opacity="0" RadiusY="15" RadiusX="15"/>
@@ -627,7 +627,7 @@
 
 
         <ScottPlot:WpfPlot x:Name="WpfPlot1" Margin="328,300,10,29" DisplayScale="1" IsEnabled="False" ScrollViewer.VerticalScrollBarVisibility="Disabled" />
-        <Button Style="{DynamicResource ButtonStyle1}" Content="Lisää paino" Background="#91276c" HorizontalAlignment="Left" Margin="558,67,0,0" VerticalAlignment="Top" Height="36" Width="164" Click="Button_Click" IsDefault="True" FontSize="18" FontFamily="Lato Semibold" Foreground="Black" BorderBrush="#FF1D1D1D">
+        <Button Style="{DynamicResource ButtonStyle1}" Content="Lisää paino" Background="#FFFF00A6" HorizontalAlignment="Left" Margin="558,67,0,0" VerticalAlignment="Top" Height="36" Width="164" Click="Button_Click" IsDefault="True" FontSize="18" FontFamily="Lato Semibold" Foreground="Black" BorderBrush="#FF1D1D1D">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -635,7 +635,7 @@
             </Button.Resources>
 
         </Button>
-        <Button Content="Poista Paino" Background="#91276c" Click="DeleteButton_Click" HorizontalAlignment="Left" Margin="558,108,0,0" VerticalAlignment="Top" Height="36" Width="164" FontSize="18" FontFamily="Lato Semibold" Foreground="Black" BorderBrush="#FF1D1D1D">
+        <Button Content="Poista Paino" Background="#FFFF00A6" Click="DeleteButton_Click" HorizontalAlignment="Left" Margin="558,108,0,0" VerticalAlignment="Top" Height="36" Width="164" FontSize="18" FontFamily="Lato Semibold" Foreground="Black" BorderBrush="#FF1D1D1D">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="10"/>
