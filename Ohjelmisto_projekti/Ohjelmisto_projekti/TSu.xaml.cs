@@ -12,7 +12,6 @@ using Navigation_Drawer_App;
 using System.Windows.Input;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using Navigation_Drawer_App;
 
 namespace Ohjelmisto_projekti
 {
@@ -24,6 +23,8 @@ namespace Ohjelmisto_projekti
             InitializeComponent();
             LoadDataFromJson(); //haetaan tiedot jsonista hetikun käynnistyyy sovellus
             UpdateUI(); //Näyttää tiedot oikeassa Uissa, joka tässä tilanteessa on Stackpanelin sisällä olevat textboxit!
+            Paivittaja();
+           
         }
 
         private void MaLisays_Click(object sender, RoutedEventArgs e)
@@ -82,27 +83,31 @@ namespace Ohjelmisto_projekti
         {
             Button button = (Button)sender;
             int index = (int)button.Tag;
-            SarjaStorage.PoistaSarja(index);
+            SarjaListSu.RemoveAt(index);
+            SaveDataToJson();
+            UpdateUI();
             Paivittaja();
+           
         }
 
         private void Paivittaja()
         {
             WrapPanelOmaLiike.Children.Clear();
-            for (int i = 0; i < SarjaStorage.Sarjat.Count; i++)
+            for (int i = 0; i < SarjaListSu.Count; i++)
             {
-                Sarja sarja = SarjaStorage.Sarjat[i];
+                Sarja sarja = SarjaListSu[i];
                 StackPanel stackPanel = new StackPanel { Orientation = Orientation.Horizontal, Margin = new Thickness(0, 5, 0, 5) };
-                TextBlock textBlock = new TextBlock { Text = $"{i + 1}. {sarja.Liike} - {sarja.Pituus} Toistoa - {sarja.Paino} KG", FontSize = 14 };
+                TextBlock textBlock = new TextBlock { Text = $"{sarja.Liike} - {sarja.Pituus} Toistoa - {sarja.Paino} KG", FontSize = 14 };
                 Button button = new Button { Content = "X", Tag = i, Margin = new Thickness(5, 0, 0, 0), };
-                button.Click += PoistaTreeni_Click;
+                button.Click += PoistaSarja_Click; // Lisätään PoistaSarja_Click suoraan tähän
                 stackPanel.Children.Add(textBlock);
                 stackPanel.Children.Add(button);
                 button.Background = System.Windows.Media.Brushes.Transparent;
                 button.BorderBrush = null;
                 button.Foreground = System.Windows.Media.Brushes.Red;
-                WrapPanelOmaLiike.Children.Add(stackPanel);
+                WrapPanelOmaLiike.Children.Add(stackPanel);       
             }
+        
         }
         private void SaveDataToJson() //Jsonin tallennus methodi, muuttaa Sarjalistan Jsoniin sopivaksi. jonka jälkeen tallentaa data2 jsoniin.
         {
@@ -113,7 +118,7 @@ namespace Ohjelmisto_projekti
 
         }
 
-        private void LoadDataFromJson() //Hakee "vanhat" tiedot jsonista. 
+        private void LoadDataFromJson() // hakee vanhat tiedot jsonista
         {
             string filePath = "dataSu.json";
             if (File.Exists(filePath))
@@ -125,7 +130,29 @@ namespace Ohjelmisto_projekti
             {
                 MessageBox.Show("Data file not found.");
             }
+            Paivittaja();
         }
+
+        private void PoistaSarja_Click(object sender, RoutedEventArgs e)
+        {
+            Button button = (Button)sender;
+            int index = (int)button.Tag;
+
+            // Poista kyseisen "X" -painikkeen yläpuolella olevat tiedot käyttöliittymästä
+            WrapPanelOmaLiike.Children.RemoveAt(index);
+
+            // Poista Sarja-objekti SarjaListSu-listasta
+            SarjaListSu.RemoveAt(index);
+
+            // Päivitä käyttöliittymä
+            Paivittaja();
+
+            // Tallenna muutokset JSON-tiedostoon
+            SaveDataToJson();
+
+        }
+
+   
         private void UpdateUI() //Methodi joka antaa näyttää "vanhat" tiedot jsonista. Jonka ansioista henkilö voi seurata paljonko on tehnyt jo toistoja
         {
             WrapPanelOmaLiike.Children.Clear(); // Clear existing items before adding new ones
