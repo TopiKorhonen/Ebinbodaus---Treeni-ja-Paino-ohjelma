@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\mirok\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\mirok\\.nuget\\packages"
+      "C:\\Users\\John\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\John\\.nuget\\packages"
     ],
     "configProperties": {
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true,
